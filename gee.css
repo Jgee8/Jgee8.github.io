@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	background-color: white;
+}
+
+header {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+nav {
+    font-family: 'oxygen mono';
+    margin:auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-size: 1.5em;
+    
+}
+
+title {
+    text-align: center;
+    font-family: 'alata';
+    font-size: 2em;
+    color: #001612;
+}
+
+Body {
+    margin: auto;
+    
+}
+
+h1 {
+    font-size: 8em;
+    color: #001612;
+}
+
+p {
+    margin: 5%;
+    font-size: 10em;
+    color: #001612;   
+}
+
+outline {    
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke: .03em #001612;
+}
+
+outline:hover { 
+    -webkit-text-fill-color:#001612;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a2 {
+    text-align: center;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+    font-size: 1.1em;
+    margin: auto;
+    margin-left: 5%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    color: #001612;   
+    font-family: 'oxygen mono';
+    text-align: center;
+}
+
+.copyright {
+    margin-right: 5%;
+    float: right;
+
+}
+
+.social {
+    margin-left: %;
+    float: left;
+
+}
+
+a:any-link { 
+    color: #001612;
+}
+
+a:hover { 
+    color:#001612
+    -webkit-text-stroke: 2em #001612;
+} /* <a href="#">Foo</a> */
+
+.wrapper {
+    text-align: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #001612;
+    column-gap: 10%;
+    margin: 15%;
+    grid-auto-rows: minmax(800px, auto) 
+    
+}
+
+.wrapper:hover {
+}
+
+.wrapper2 {
+    text-align: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #001612;
+    column-gap: 10%;
+    margin: 15%;
+    
+}
+
+.wrapper_photography {
+    text-align: center;
+    align-content: center;
+    margin: 15%;
+    grid-template-columns: 1fr 1fr;
+    color: #001612;
+    column-gap: 10%;
+}
+
+.wrapperhalf {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-content: center;
+    display: grid;
+    grid-auto-rows: %;
+    column-gap: 5%
+}
+
+box {
+    height: 50%;
+    width: 50%;
+    background-color: #001612; 
+}
+
+img:hover {
+    opacity: 80%; 
+}
+
+description {
+    font-size: 2em;
+    margin-top: 10%;
+    font: "alata";
+}
+
+date {
+    opacity: 69%;
+    font-family: 'oxygen mono';
+    font-size: 1.5em;
+    width: 100%;
+}
+
+p2 {
+    font-size: 6em;
+    font-family: 'alata';
+    color: #001612;
+}
+
+p3 {
+    margin-top: 15%;
+    margin: 5%;
+    font-size: 2em;
+    font-family: "oxygen mono";
+}
+
+p4 {
+    margin-top: 25%;
+    margin: 5%;
+    font-size: 1.5em;
+    font-family: "alata";
+    text-align:left !important;
+    align-content:left !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr ;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapperhalf {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width:769px) {
+    .desktop-br {display: inline;}
+    .mobile-br {display: none;}
+}
+
+@media all and (max-width:768px) {
+    .desktop-br {display: none;}
+    .mobile-br {display: inline;}
+}
+
+
