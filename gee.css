@@ -219,4 +219,8 @@ p4 {
     .mobile-br {display: inline;}
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
