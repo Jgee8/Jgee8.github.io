@@ -11,7 +11,7 @@ body {
 }
 
 html {
-	background-color: white;
+	background-color: #FAF9F6;
 }
 
 header {
@@ -99,7 +99,7 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     color: #001612;
     column-gap: 10%;
-    margin: 15%;
+    margin: 10%;
     grid-auto-rows: minmax(50vw, auto) 
     
 }
