@@ -139,8 +139,13 @@ box {
     background-color: #001612; 
 }
 
+.img { 
+    background-color:#001612;
+}
+
 img:hover {
     opacity: 80%; 
+    background-color:#001612;
 }
 
 description {
