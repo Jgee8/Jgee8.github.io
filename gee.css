@@ -106,6 +106,7 @@ a:hover {
 
 
 .wrapper2 {
+    pointer-events: none;
     text-align: center;
     align-content: center;
     display: grid;
@@ -117,6 +118,7 @@ a:hover {
 }
 
 .wrapper_photography {
+    pointer-events: none;
     text-align: center;
     align-content: center;
     margin: 15%;
@@ -139,13 +141,18 @@ box {
     background-color: #001612; 
 }
 
-.img { 
-    background-color:#001612;
+img { 
+
 }
 
 img:hover {
     opacity: 80%; 
     background-color:#001612;
+}
+
+video {
+    width: 100%;
+    height: auto;
 }
 
 description {
