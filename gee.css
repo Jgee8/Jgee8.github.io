@@ -38,10 +38,6 @@ body {
     
 }
 
-h1 {
-    font-size: 5vw;
-    color: #001612;
-}
 
 
 outline {    
@@ -155,27 +151,34 @@ video {
     height: auto;
 }
 
-description {
-    font-size: 2vw;
-    margin-top: 10%;
-    font: "alata";
+
+
+
+/* fonts */
+
+.title {      
+    margin: 5%;
+    font-size: 7.5vw;
+    color: #001612;   
 }
 
 date {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     opacity: 69%;
     font-family: 'oxygen mono';
     font-size: 1vw;
     width: 100%;
 }
 
-p2 {
-    font-size: 8vw;
+h1 {
+    font-size: 7vw;
     font-family: 'alata';
     text-align: center;
     color: #001612;
 }
 
-h3 {
+h2 {
     margin-top: 1vw;
     margin-bottom: 5vw;
     text-align: center;
@@ -183,13 +186,27 @@ h3 {
     font-family: "oxygen mono";
 }
 
-p {
-    margin-top: 1vw;
-    margin-bottom: 10vw;
+h3 {
+    margin-top: vw;
+    margin-bottom: 2vw;
     font-size: 2vw;
     font-family: "alata";
     text-align:center !important;
     align-content:center !important;
+}
+
+description {
+    font-size: 2vw;
+    margin-top: 10%;
+    font: "alata";
+}
+
+p {
+    opacity: 69%;
+    font-family: 'oxygen mono';
+    font-size: 1vw;
+    width: 100%;
+    color: #001612;
 }
 
 
@@ -198,11 +215,6 @@ html, body {
     overflow-x: hidden;
 }
 
-.title {      
-    margin: 5%;
-    font-size: 7.5vw;
-    color: #001612;   
-}
 
 /* Mobile styles */
 @media (max-width: 768px) {
