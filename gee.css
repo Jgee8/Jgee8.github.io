@@ -146,12 +146,6 @@ img:hover {
     background-color:#001612;
 }
 
-video {
-    width: 100%;
-    height: auto;
-}
-
-
 
 
 /* fonts */
@@ -226,20 +220,20 @@ html, body {
 
 @media screen and (max-width:768px) {
     .footer{
-    font-size: 3vw;
+        font-size: 3vw;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .wrapper {
-      grid-template-columns: 1fr;
-      grid-auto-rows: minmax(100vw, auto) 
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(100vw, auto) 
     }
   }
   
   @media only screen and (max-width: 768px) {
     .wrapper2 {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
   }
   
@@ -258,3 +252,9 @@ html, body {
       .desktop-br {display: none;}
       .mobile-br {display: inline;}
   }
+
+  @media (max-width: 768px) {
+    p {
+        font-size: 1.5vw;
+    }
+}
