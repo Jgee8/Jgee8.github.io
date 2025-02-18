@@ -255,6 +255,12 @@ html, body {
 
   @media (max-width: 768px) {
     p {
-        font-size: 1.5vw;
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    description {
+        font-size: 3vw;
     }
 }
