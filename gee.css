@@ -6,7 +6,7 @@
 }
 
 body {
-  
+    margin: auto;
     font-family: 'Alata';
 }
 
@@ -30,14 +30,6 @@ nav {
     font-size: 2vw;
     
 }
-
-
-body {
-    margin: auto;
-    font-family: 'Alata';
-    
-}
-
 
 
 outline {    
@@ -88,6 +80,13 @@ a:hover {
     -webkit-text-stroke: #001612;
 }
 
+box {
+    height: 50%;
+    width: 50%;
+    background-color: #001612; 
+}
+
+
 .wrapper {
     text-align: center;
     align-content: center;
@@ -99,7 +98,6 @@ a:hover {
     grid-auto-rows: minmax(50vw, auto) 
     
 }
-
 
 .wrapper2 {
     pointer-events: none;
@@ -123,6 +121,16 @@ a:hover {
     column-gap: 10%;
 }
 
+.wrapper_photography_black {
+    pointer-events: none;
+    text-align: center;
+    align-content: center;
+    margin: 15%;
+    grid-template-columns: 1fr 1fr;
+    background-color: #0b0b0b;
+    column-gap: 10%;
+}
+
 .wrapperhalf {
     grid-template-columns: 1fr 1fr;
     text-align: center;
@@ -131,11 +139,6 @@ a:hover {
     column-gap: 5%;
 }
 
-box {
-    height: 50%;
-    width: 50%;
-    background-color: #001612; 
-}
 
 img { 
     width: 100%;
@@ -147,6 +150,44 @@ img:hover {
 }
 
 
+.wrapper_grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+    gap: 10px; /* Adjust gap between items */
+    margin: 15%;
+    pointer-events: none;
+}
+
+.box2 {
+    flex: 1 1 calc(50% - 5px); /* Two columns with gap adjustment */
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.box2 img {
+    width: 100%; /* Ensure images fill the container width */
+    object-fit: cover; /* Ensures images fill the container without distortion */
+}
+
+/* Wide images span 2 columns */
+.box2.wide {
+    flex: 1 1 100%; /* Wide images take full width */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .box2 {
+        flex: 1 1 100%; /* Switch to 1 column on smaller screens */
+    }
+
+    .box2.wide {
+        flex: 1 1 100%; /* Wide images take full width on smaller screens */
+    }
+}
 
 /* fonts */
 
