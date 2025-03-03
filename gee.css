@@ -149,44 +149,28 @@ img:hover {
     background-color:#001612;
 }
 
+/* masonry gallery */
 
-.wrapper_grid {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
-    gap: 10px; /* Adjust gap between items */
-    margin: 15%;
-    pointer-events: none;
+.masonry-container {
+    column-count: 3;
+    padding: 20px;
+    margin: 10%;
 }
 
-.box2 {
-    flex: 1 1 calc(50% - 5px); /* Two columns with gap adjustment */
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    border-radius: 0px;
     overflow: hidden;
-    position: relative;
-    box-sizing: border-box; /* Ensure padding and borders are included in the width */
-    display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
 }
 
-.box2 img {
-    width: 100%; /* Ensure images fill the container width */
-    object-fit: cover; /* Ensures images fill the container without distortion */
+.masonry-item img {
+    width: 100%;
+    display: block;
 }
 
-/* Wide images span 2 columns */
-.box2.wide {
-    flex: 1 1 100%; /* Wide images take full width */
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 600px) {
-    .box2 {
-        flex: 1 1 100%; /* Switch to 1 column on smaller screens */
-    }
-
-    .box2.wide {
-        flex: 1 1 100%; /* Wide images take full width on smaller screens */
-    }
+.masonry-item-2 {
+    grid-column: span 2; /* Span 2 columns */
 }
 
 /* fonts */
@@ -303,5 +287,24 @@ html, body {
 @media (max-width: 768px) {
     description {
         font-size: 3vw;
+    }
+}
+
+ /* masonry gallery mobile */
+@media screen and (max-width: 1200px) {
+    .masonry-container {
+        column-count: 3;
+    }
+}
+    
+@media screen and (max-width: 900px) {
+    .masonry-container {
+        column-count: 2;
+    }
+}
+        
+@media screen and (max-width: 600px) {
+    .masonry-container {
+        column-count: 1;
     }
 }
