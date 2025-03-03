@@ -149,6 +149,7 @@ img:hover {
     background-color:#001612;
 }
 
+
 /* masonry gallery */
 
 .masonry-container {
@@ -156,6 +157,13 @@ img:hover {
     padding: 20px;
     margin: 10%;
 }
+
+.masonry-container {
+    column-count: 2;
+    padding: 20px;
+    margin: 10%;
+}
+
 
 .masonry-item {
     break-inside: avoid;
