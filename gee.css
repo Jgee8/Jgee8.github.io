@@ -298,6 +298,18 @@ html, body {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .video {
+        margin-top: 10vw;
+    }
+}
+        
+@media screen and (max-width: 600px) {
+    .video {
+        margin-top: 10vw;
+    }
+}
+
  /* masonry gallery mobile */
 @media screen and (max-width: 1200px) {
     .masonry-container {
