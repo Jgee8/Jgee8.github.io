@@ -316,3 +316,15 @@ html, body {
         column-count: 1;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .masonry-container-2 {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .masonry-container-2 {
+        column-count: 1;
+    }
+}
