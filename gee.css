@@ -58,7 +58,6 @@ footer {
     margin-bottom: 10%;
     color: #001612;   
     font-family: 'oxygen mono';
-
 }
 
 .copyright {
@@ -253,7 +252,14 @@ html, body {
 
 @media screen and (max-width:600px) {
     .footer{
-        font-size: 3vw;
+        clear: both;
+        position: relative;
+        margin: auto;
+        margin-left: 5%;
+        margin-bottom: 10%;
+        color: #001612;   
+        font-family: 'oxygen mono';
+        font-size: 2vw;
     }
 }
 
