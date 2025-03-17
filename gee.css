@@ -45,7 +45,7 @@ a:link {
   text-decoration: none;
 }
 
-a2 {
+a {
     text-align: center;
 }
 
@@ -244,33 +244,33 @@ html, body {
 
 
 /* Mobile styles */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .title {
         font-size: 15vw; /* Adjust font size for smaller screens */
         margin: 3%; /* Reduce margin on mobile */
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:600px) {
     .footer{
         font-size: 3vw;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .wrapper {
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(100vw, auto) 
     }
   }
   
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     .wrapper2 {
         grid-template-columns: 1fr;
     }
   }
   
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     .wrapperhalf {
         grid-template-columns: 1fr;
     }
@@ -286,29 +286,39 @@ html, body {
       .mobile-br {display: inline;}
   }
 
-  @media (max-width: 768px) {
+/* fonts */
+
+  @media (max-width: 600px) {
     p {
         font-size: 2vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     description {
         font-size: 4vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     date {
         font-size: 2vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    a {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 600px) {
     h2 {
         font-size: 2.5vw;
     }
 }
+
+/* fonts end*/
 
 @media screen and (max-width: 900px) {
     .video {
