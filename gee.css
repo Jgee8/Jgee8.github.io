@@ -28,7 +28,6 @@ nav {
     margin-bottom: 5%;
     margin-left: 5%;
     font-size: 2vw;
-    
 }
 
 
@@ -260,6 +259,17 @@ html, body {
         color: #001612;   
         font-family: 'oxygen mono';
         font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        font-family: 'oxygen mono';
+        margin:auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        font-size: 3vw;
     }
 }
 
