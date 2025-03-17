@@ -45,7 +45,7 @@ a:link {
   text-decoration: none;
 }
 
-a {
+a2 {
     text-align: center;
 }
 
@@ -58,7 +58,7 @@ footer {
     margin-bottom: 10%;
     color: #001612;   
     font-family: 'oxygen mono';
-    text-align: center;
+
 }
 
 .copyright {
@@ -296,7 +296,7 @@ html, body {
 
 @media (max-width: 600px) {
     description {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 }
 
@@ -307,8 +307,9 @@ html, body {
 }
 
 @media (max-width: 600px) {
-    a {
+    a2 {
         font-size: 1.5vw;
+        text-align: left;
     }
 }
 
