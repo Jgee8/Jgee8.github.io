@@ -207,18 +207,11 @@ h2 {
     margin-top: 1vw;
     margin-bottom: 5vw;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: "oxygen mono";
 }
 
-h3 {
-    margin-top: vw;
-    margin-bottom: 2vw;
-    font-size: 2vw;
-    font-family: "alata";
-    text-align:center !important;
-    align-content:center !important;
-}
+
 
 description {
     font-size: 2vw;
