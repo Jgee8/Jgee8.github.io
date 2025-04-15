@@ -283,7 +283,7 @@ html, body {
         margin-top: 20%;
         color: #001612;   
         font-family: 'oxygen mono';
-        font-size: 40px;
+        font-size: 25px;
     }
 }
 
@@ -334,20 +334,20 @@ html, body {
       font-size: 20px;
     }
     description {
-      font-size: 50px;
+      font-size: 35px;
     }
     date {
-      font-size: 38px;
+      font-size: 22px;
     }
     h1 {
       font-size: 7vw;
     }
     h2 {
-      font-size: 38px;
+      font-size: 22px;
       font-weight: normal;
     }
     h3 {
-      font-size: 25px;
+      font-size: 20px;
       font-weight: normal;
     }
   }
