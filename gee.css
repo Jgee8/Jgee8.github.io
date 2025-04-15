@@ -17,17 +17,16 @@ html {
 header {
     text-align: center;
     margin: auto;
-    margin: 10%;
-    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 nav {
     font-family: 'oxygen mono';
     margin:auto;
     margin-top: 5%;
-    margin-bottom: 5%;
     margin-left: 5%;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 
@@ -40,6 +39,11 @@ outline:hover {
     -webkit-text-fill-color:#001612;
 }
 
+a:hover { 
+    color:#001612;
+    -webkit-text-stroke: #001612;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -49,10 +53,7 @@ a2 {
 }
 
 footer {
-    clear: both;
-    position: relative;
-    font-size: 1.5vw;
-    margin: auto;
+    font-size: 1vw;
     margin-left: 5%;
     margin-bottom: 10%;
     color: #001612;   
@@ -73,10 +74,6 @@ a:any-link {
     color: #001612;
 }
 
-a:hover { 
-    color:#001612;
-    -webkit-text-stroke: #001612;
-}
 
 box {
     height: 50%;
@@ -107,6 +104,25 @@ box {
     column-gap: 10%;
     margin: 15%;
     grid-auto-rows: minmax(30vw, auto) 
+}
+
+.wrapper_boxed {
+    pointer-events: none;
+    text-align: center;
+    align-content: center;
+    padding: 5%;
+    margin: 10%;
+    background-color: #001612;
+}
+
+.wrapper_description {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #001612;
+    column-gap: 10%;
+    margin: 10%;
+    margin-bottom: -10%;
 }
 
 .wrapper_photography {
@@ -205,10 +221,16 @@ h1 {
 
 h2 {
     margin-top: 1vw;
-    margin-bottom: 5vw;
     text-align: center;
     font-size: 1.5vw;
     font-family: "oxygen mono";
+}
+
+h3 {
+    font-family: 'oxygen mono';
+    font-size: 1vw;
+    width: 100%;
+    color: #001612;
 }
 
 
@@ -218,6 +240,7 @@ description {
     margin-top: 10%;
     font: "alata";
 }
+
 
 p {
     opacity: 69%;
