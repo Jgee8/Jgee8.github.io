@@ -82,12 +82,6 @@ a:any-link {
 
 /* footer end */
 
-box {
-    height: 50%;
-    width: 50%;
-    background-color: #001612; 
-}
-
 
 .wrapper {
     text-align: center;
@@ -211,8 +205,6 @@ img:hover {
 }
 
 date {
-    margin-top: 10%;
-    margin-bottom: 10%;
     opacity: 69%;
     font-family: 'oxygen mono';
     font-size: 20px;
@@ -244,7 +236,7 @@ h3 {
 
 
 description {
-    font-size: 28px;
+    font-size: 35px;
     margin-top: 10%;
     font: "alata";
 }
@@ -305,27 +297,33 @@ html, body {
     }
   }
   
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .wrapper2 {
         grid-template-columns: 1fr;
     }
   }
   
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .wrapperhalf {
         grid-template-columns: 1fr;
     }
   }
   
-  @media all and (min-width:501px) {
+@media all and (min-width:501px) {
       .desktop-br {display: inline;}
       .mobile-br {display: none;}
   }
   
-  @media all and (max-width:500px) {
+@media all and (max-width:500px) {
       .desktop-br {display: none;}
       .mobile-br {display: inline;}
   }
+
+@media (max-width: 600px) {
+  .box {
+    margin: 5%;
+}
+}
 
 /* fonts mobile */
 
@@ -340,7 +338,7 @@ html, body {
       font-size: 15px;
     }
     h1 {
-      font-size: 7vw;
+      font-size: 45px;
     }
     h2 {
       font-size: 18px;
