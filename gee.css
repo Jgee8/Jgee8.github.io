@@ -26,7 +26,7 @@ nav {
     margin:auto;
     margin-top: 5%;
     margin-left: 5%;
-    font-size: 1.5vw;
+    font-size: 28px;
 }
 
 /* homepage outline text */
@@ -55,12 +55,12 @@ a:link {
 
 
 
-/* homepage outline text end */
+/* homepage outline text end */ 
 
 /* footer */
 
 footer {
-    font-size: 1vw;
+    font-size: 20px;
     margin-left: 5%;
     margin-bottom: 10%;
     color: #001612;   
@@ -211,11 +211,11 @@ img:hover {
 }
 
 date {
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    margin-top: 10%;
+    margin-bottom: 10%;
     opacity: 69%;
     font-family: 'oxygen mono';
-    font-size: 1vw;
+    font-size: 20px;
     width: 100%;
 }
 
@@ -227,16 +227,16 @@ h1 {
 }
 
 h2 {
-    margin-top: 1vw;
+    margin-top: 5%;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 25px;
     font-family: "oxygen mono";
     font-weight: normal;
 }
 
 h3 {
     font-family: 'oxygen mono';
-    font-size: 1vw;
+    font-size: 18px;
     width: 100%;
     color: #001612;
     font-weight: normal;
@@ -244,7 +244,7 @@ h3 {
 
 
 description {
-    font-size: 2vw;
+    font-size: 28px;
     margin-top: 10%;
     font: "alata";
 }
@@ -253,7 +253,7 @@ description {
 p {
     opacity: 69%;
     font-family: 'oxygen mono';
-    font-size: 1vw;
+    font-size: 18px;
     width: 100%;
     color: #001612;
 }
@@ -283,7 +283,7 @@ html, body {
         margin-top: 20%;
         color: #001612;   
         font-family: 'oxygen mono';
-        font-size: 2.5vw;
+        font-size: 40px;
     }
 }
 
@@ -331,23 +331,23 @@ html, body {
 
 @media (max-width: 600px) {
     p {
-      font-size: 2vw;
+      font-size: 20px;
     }
     description {
-      font-size: 5vw;
+      font-size: 50px;
     }
     date {
-      font-size: 2vw;
+      font-size: 38px;
     }
     h1 {
       font-size: 7vw;
     }
     h2 {
-      font-size: 2.5vw;
+      font-size: 38px;
       font-weight: normal;
     }
     h3 {
-      font-size: 1.5vw;
+      font-size: 25px;
       font-weight: normal;
     }
   }
@@ -356,7 +356,7 @@ html, body {
 
 @media screen and (max-width: 900px) {
     .video {
-      margin-top: 10vw;
+      margin-top: 10%;
     }
   }
 
