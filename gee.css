@@ -329,19 +329,19 @@ html, body {
 
 @media (max-width: 600px) {
     p {
-      font-size: 15px;
+      font-size: 14px;
     }
     description {
-      font-size: 25px;
+      font-size: 28px;
     }
     date {
-      font-size: 15px;
+      font-size: 14px;
     }
     h1 {
       font-size: 45px;
     }
     h2 {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: normal;
     }
     h3 {
