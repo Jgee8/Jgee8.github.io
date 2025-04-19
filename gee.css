@@ -394,7 +394,8 @@ html, body {
 }
 
 .navigation {
-    position: relative;
+    position: absolute;
+    overflow-anchor: none;
 }
 }
 
