@@ -21,6 +21,9 @@ header {
     margin-right: 10%;
 }
 
+/* nav buttons end */
+
+
 nav {
     font-family: 'oxygen mono';
     margin:auto;
@@ -41,10 +44,10 @@ nav {
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    padding: 2%;
+    padding: 3%;
 }
   
-  .prev-button, .next-button {
+.prev-button, .next-button {
     border: none;
     padding: 10px 20px;
     border-radius: 50%;
@@ -52,6 +55,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
+    pointer-events: auto;
   }
   
   .prev-button svg, .next-button svg {
@@ -59,21 +64,28 @@ nav {
     height: 24px;
     margin-bottom: 5px;
   }
-
+  
   .prev-button span, .next-button span {
     font-size: 14px;
     font-weight: light;
     color: #001612;
     font-family: 'oxygen mono';
   }
-
-  .prev-button:hover svg, .next-button:hover svg {
-    fill: #001612;
+  
+  .prev-button:hover, .next-button:hover {
+    background-color: #001612;
+    color: #fff;
+  }
+  
+  .prev-button:hover span, .next-button:hover span {
+    color: #fff;
   }
   
   .prev-button:disabled svg, .next-button:disabled svg {
     fill: #001612;
   }
+
+/* nav buttons end */
 
 /* homepage outline text */
 
