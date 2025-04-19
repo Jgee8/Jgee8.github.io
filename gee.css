@@ -387,14 +387,14 @@ html, body {
 @media only screen and (max-width: 600px) {
 .prev-button, .next-button {
     background-color: rgba(250, 249, 246, 0);
-    }
+}
 
 .prev-button span, .next-button span {
     font-size: 14px;
-  }
+}
 
 .navigation {
-    padding: 0%;
+    position: relative;
 }
 }
 
