@@ -26,7 +26,7 @@ header {
 
 nav {
     font-family: 'oxygen mono';
-    margin:auto;
+    margin: auto;
     margin-top: 5%;
     margin-left: 5%;
     font-size: 28px;
@@ -55,7 +55,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    background-color: #FAF9F6;
     pointer-events: auto;
   }
   
@@ -66,7 +66,7 @@ nav {
   }
   
   .prev-button span, .next-button span {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: light;
     color: #001612;
     font-family: 'oxygen mono';
@@ -74,11 +74,11 @@ nav {
   
   .prev-button:hover, .next-button:hover {
     background-color: #001612;
-    color: #fff;
+    color: #FAF9F6;
   }
   
   .prev-button:hover span, .next-button:hover span {
-    color: #fff;
+    color: #FAF9F6;
   }
   
   .prev-button:disabled svg, .next-button:disabled svg {
@@ -381,6 +381,20 @@ html, body {
 @media (max-width: 600px) {
   .box {
     margin: 5%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+.prev-button, .next-button {
+    background-color: rgba(250, 249, 246, 0);
+    }
+
+.prev-button span, .next-button span {
+    font-size: 14px;
+  }
+
+.navigation {
+    padding: 0%;
 }
 }
 
