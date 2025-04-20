@@ -21,7 +21,7 @@ header {
     margin-right: 10%;
 }
 
-/* nav buttons end */
+/* nav buttons start */
 
 
 nav {
@@ -137,6 +137,7 @@ footer {
 
 a:any-link { 
     color: #001612;
+    align-content: center;
 }
 
 /* footer end */
