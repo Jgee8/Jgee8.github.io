@@ -176,7 +176,7 @@ a:any-link {
 
 .wrapper_description {
     align-content: center;
-    display: grid;
+
     grid-template-columns: 1fr 1fr;
     color: #001612;
     column-gap: 10%;
@@ -394,7 +394,7 @@ html, body {
 }
 
 .navigation {
-    position: absolute;
+    position: static;
     overflow-anchor: none;
 }
 }
