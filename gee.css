@@ -59,6 +59,7 @@ nav {
     pointer-events: auto;
   }
   
+  
   .prev-button svg, .next-button svg {
     width: 24px;
     height: 24px;
@@ -136,6 +137,7 @@ footer {
 
 a:any-link { 
     color: #001612;
+    align-content: center;
 }
 
 /* footer end */
@@ -342,11 +344,13 @@ html, body {
 @media screen and (max-width:600px) {
     nav {
         font-family: 'oxygen mono';
-        margin:auto;
+        margin: auto;
         margin-top: 5%;
         margin-bottom: 5%;
         margin-left: 5%;
         font-size: 18px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -405,7 +409,7 @@ html, body {
     right: 0;
     z-index: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     padding: 3%;
     overflow-anchor: none;
     }
