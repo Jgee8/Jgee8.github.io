@@ -137,7 +137,6 @@ footer {
 
 a:any-link { 
     color: #001612;
-    align-content: center;
 }
 
 /* footer end */
@@ -387,6 +386,10 @@ html, body {
   .box {
     margin: 0%;
 }
+  .box-home {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
