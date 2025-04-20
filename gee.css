@@ -388,13 +388,10 @@ html, body {
 .prev-button, .next-button {
     background-color: rgba(250, 249, 246, 0);
 }
-
 .prev-button span, .next-button span {
     font-size: 10px;
 }
-
 .navigation {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -406,7 +403,6 @@ html, body {
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    padding: 3%;
     overflow-anchor: none;
 }
 
@@ -416,10 +412,16 @@ html, body {
     p {
       font-size: 14px;
     }
-    description {
+    .box {
       font-size: 26px;
     }
-    date {
+    description {
+      font-size: 28px;
+    }
+    .wrapper_description {
+      display: inherit;
+    }
+    .date {
       font-size: 14px;
     }
     h1 {
