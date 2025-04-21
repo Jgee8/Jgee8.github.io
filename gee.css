@@ -121,7 +121,7 @@ a:link {
 footer {
     font-size: 20px;
     margin-left: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     color: #001612;   
     font-family: 'oxygen mono';
 }
@@ -150,7 +150,7 @@ a:any-link {
     grid-template-columns: 1fr 1fr;
     color: #001612;
     column-gap: 10%;
-    margin: 10%;
+    margin: 0% 10% 5%;
     grid-auto-rows: minmax(50vw, auto) 
     
 }
@@ -172,7 +172,7 @@ a:any-link {
     text-align: center;
     align-content: center;
     padding: 5%;
-    margin: 10%;
+    margin: 5% 10% 10%;
     outline: 2px solid #001612;
 }
 
@@ -183,7 +183,7 @@ a:any-link {
     color: #001612;
     column-gap: 10%;
     margin: 10%;
-    margin-bottom: -10%;
+    margin-bottom: -5%;
 }
 
 .wrapper_photography {
@@ -333,7 +333,7 @@ html, body {
         position: relative;
         margin: auto;
         margin-left: 5%;
-        margin-bottom: 20%;
+        margin-bottom: 10%;
         margin-top: 20%;
         color: #001612;   
         font-family: 'oxygen mono';
@@ -399,6 +399,12 @@ html, body {
 .prev-button span, .next-button span {
     font-size: 10px;
 }
+
+.prev-button svg, .next-button svg {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0px;
+  }
 
 .navigation {
     display: flex;
