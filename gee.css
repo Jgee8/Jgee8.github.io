@@ -347,7 +347,7 @@ html, body {
         color: #001612;
         column-gap: 10%;
         margin: 10%;
-        margin-bottom: -10%;
+        margin-bottom: -5%;
     }
     nav {
         font-family: 'oxygen mono';
