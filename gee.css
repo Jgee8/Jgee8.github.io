@@ -393,9 +393,9 @@ html, body {
     margin: 0%;
 }
   .box-menu {
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -435,19 +435,19 @@ html, body {
 
 @media (max-width: 600px) {
     p {
-      font-size: 14px;
+      font-size: 12px;
     }
     description {
-      font-size: 26px;
+      font-size: 22px;
     }
     date {
-      font-size: 14px;
+      font-size: 12px;
     }
     h1 {
       font-size: 38px;
     }
     h2 {
-      font-size: 14px;
+      font-size: 12px;
       font-weight: normal;
     }
     h3 {
