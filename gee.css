@@ -146,7 +146,7 @@ a:any-link {
     background-color: transparent;
 }
 
-.box-home {
+.box-menu {
     background-color: transparent;
 }
 
@@ -393,6 +393,7 @@ html, body {
     margin: 0%;
 }
   .box-home {
+    margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
   }
