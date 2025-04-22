@@ -146,6 +146,10 @@ a:any-link {
     background-color: transparent;
 }
 
+.box-home {
+    background-color: transparent;
+}
+
 .wrapper {
     text-align: center;
     align-content: center;
@@ -170,7 +174,7 @@ a:any-link {
     grid-auto-rows: minmax(30vw, auto) 
 }
 
-.wrapper_boxed {
+.wrapper-boxed {
     pointer-events: none;
     text-align: center;
     align-content: center;
@@ -179,7 +183,7 @@ a:any-link {
     outline: 2px solid #001612;
 }
 
-.wrapper_description {
+.wrapper-description {
     align-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -189,7 +193,7 @@ a:any-link {
     margin-bottom: -5%;
 }
 
-.wrapper_photography {
+.wrapper-photography {
     pointer-events: none;
     text-align: center;
     align-content: center;
@@ -199,7 +203,7 @@ a:any-link {
     column-gap: 10%;
 }
 
-.wrapper_photography_black {
+.wrapper-photography-black {
     pointer-events: none;
     text-align: center;
     align-content: center;
@@ -343,7 +347,7 @@ html, body {
         font-size: 2.5vw;
     }
 
-    .wrapper_description {
+    .wrapper-description {
         align-content: center;
         display: inherit;
         grid-template-columns: 1fr 1fr;
