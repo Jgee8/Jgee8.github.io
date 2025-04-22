@@ -88,10 +88,11 @@ nav {
 
 /* nav buttons end */
 
+
 /* homepage outline text */
 
 outline {    
-    -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke: .03em #001612;
 }
 
@@ -112,9 +113,8 @@ a:link {
     -webkit-text-stroke: none;
 }
 
-
-
 /* homepage outline text end */ 
+
 
 /* footer */
 
@@ -142,6 +142,9 @@ a:any-link {
 
 /* footer end */
 
+.box {
+    background-color: transparent;
+}
 
 .wrapper {
     text-align: center;
@@ -150,7 +153,7 @@ a:any-link {
     grid-template-columns: 1fr 1fr;
     color: #001612;
     column-gap: 10%;
-    margin: 0% 10% 5%;
+    margin: 5% 10% 5%;
     grid-auto-rows: minmax(50vw, auto) 
     
 }
