@@ -150,6 +150,7 @@ a:any-link {
     background-color: transparent;
     padding: 24px;
     margin: 10% 0 10%;
+    outline: 2px solid #001612;
 }
 
 .wrapper {
@@ -225,7 +226,8 @@ a:any-link {
 
 img { 
     width: 100%;
-    padding: 5%;
+    margin-bottom: 5%;
+    outline: 2px solid #001612;
 }
 
 img:hover {
