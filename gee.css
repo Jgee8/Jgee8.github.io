@@ -154,7 +154,7 @@ a:any-link {
 }
 
 .wrapper {
-    text-align: center;
+    text-align: start;
     align-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -169,11 +169,11 @@ a:any-link {
     text-align: center;
     align-content: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     color: #001612;
     column-gap: 10%;
     margin: 5% 15% 5%;
-    grid-auto-rows: minmax(30vw, auto) 
+    grid-auto-rows: auto;
 }
 
 .wrapper-boxed {
@@ -223,16 +223,17 @@ a:any-link {
     column-gap: 5%;
 }
 
-
 img { 
     width: 100%;
-    margin-bottom: 5%;
-    outline: 2px solid #001612;
 }
 
 img:hover {
     opacity: 80%; 
     background-color:transparent;
+}
+
+.img-container {
+    margin-bottom: 5%;
 }
 
 
