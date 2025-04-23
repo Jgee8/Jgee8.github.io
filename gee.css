@@ -160,7 +160,7 @@ a:any-link {
     grid-template-columns: 1fr 1fr;
     color: #001612;
     column-gap: 10%;
-    margin: 5% 10% 5%;
+    margin: 10% 10% 5%;
     grid-auto-rows: auto;
 }
 
