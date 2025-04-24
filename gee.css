@@ -232,6 +232,10 @@ img:hover {
     background-color:transparent;
 }
 
+.img-container img {
+    outline: 2px solid #001612;
+  }
+
 .img-container {
     margin-bottom: 5%;
 }
@@ -303,7 +307,7 @@ h1 {
 h2 {
     margin-top: 5%;
     text-align: center;
-    font-size: 20px;
+    font-size: 26px;
     font-family: "oxygen mono";
     font-weight: normal;
 }
