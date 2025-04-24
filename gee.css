@@ -27,9 +27,11 @@ header {
 nav {
     font-family: 'oxygen mono';
     margin: auto;
-    margin-top: 5%;
-    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 10% auto;
     font-size: 28px;
+    align-content: center;
 }
 
 .navigation {
@@ -41,7 +43,6 @@ nav {
     transform: translateY(-50%);
     left: 0;
     right: 0;
-    z-index: 1;
     display: flex;
     justify-content: space-between;
     padding: 3%;
@@ -151,6 +152,7 @@ a:any-link {
     padding: 24px;
     margin: 10% 0 10%;
     outline: 2px solid #001612;
+    z-index: 2;
 }
 
 .wrapper {
