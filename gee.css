@@ -23,15 +23,18 @@ header {
 
 /* nav buttons start */
 
-
 nav {
     font-family: 'oxygen mono';
-    margin: auto;
     display: flex;
-    justify-content: space-between;
     margin: 5% 10% auto;
     font-size: 28px;
-    align-content: center;
+}
+
+.links {
+    display: flex;
+    font-family: 'alata';
+    font-size: 28px;
+    margin-left: 1%;
 }
 
 .navigation {
@@ -373,7 +376,7 @@ html, body {
         grid-template-columns: 1fr 1fr;
         color: #001612;
         column-gap: 10%;
-        margin: 10%;
+        margin: 5%;
         margin-bottom: -5%;
     }
     nav {
@@ -406,7 +409,7 @@ html, body {
 @media all and (max-width:500px) {
       .desktop-br {display: none;}
       .mobile-br {display: inline;}
-  }
+  }  
 
 @media (max-width: 600px) {
   .box {
@@ -446,7 +449,7 @@ html, body {
     right: 0;
     z-index: 1;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     padding: 3%;
     overflow-anchor: none;
     }
