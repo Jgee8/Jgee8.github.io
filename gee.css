@@ -131,6 +131,7 @@ a:link {
 footer {
     font-size: 20px;
     margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 5%;
     color: #001612;   
     font-family: 'oxygen mono';
@@ -202,7 +203,7 @@ a:any-link {
     grid-template-columns: 1fr 1fr;
     color: #001612;
     column-gap: 10%;
-    margin: 10%;
+    margin: 5%;
     margin-bottom: -5%;
 }
 
@@ -262,12 +263,14 @@ img:hover {
     column-count: 3;
     padding: 20px;
     margin: 10%;
+    outline: 2px solid #001612;
 }
 
 .masonry-container-2 {
     column-count: 2;
     padding: 20px;
     margin: 10%;
+    outline: 2px solid #001612;
 }
 
 
@@ -371,6 +374,7 @@ html, body {
         position: relative;
         margin: auto;
         margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 10%;
         margin-top: 20%;
         color: #001612;   
