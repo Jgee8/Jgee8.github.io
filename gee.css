@@ -443,13 +443,11 @@ html, body {
     justify-content: space-between;
     align-items: center;
     position: static;
-    top: 50%;
     transform: none;
     left: 0;
     right: 0;
     z-index: 1;
     display: flex;
-    justify-content: center;
     padding: 3%;
     overflow-anchor: none;
     }
