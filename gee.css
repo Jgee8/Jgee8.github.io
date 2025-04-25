@@ -203,8 +203,9 @@ a:any-link {
     grid-template-columns: 1fr 1fr;
     color: #001612;
     column-gap: 10%;
-    margin: 5%;
-    margin-bottom: -5%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    background-color: #001612;
 }
 
 .wrapper-photography {
@@ -332,7 +333,7 @@ h3 {
     font-family: 'oxygen mono';
     font-size: 18px;
     width: 100%;
-    color: #001612;
+    color: #FAF9F6;
     font-weight: normal;
     text-align: center;
 }
@@ -388,8 +389,8 @@ html, body {
         grid-template-columns: 1fr 1fr;
         color: #001612;
         column-gap: 10%;
-        margin: 5%;
-        margin-bottom: -5%;
+        margin-top: 5%;
+        margin-bottom: 0%;
     }
     nav {
         font-family: 'oxygen mono';
@@ -439,28 +440,49 @@ html, body {
 }
 
 @media only screen and (max-width: 600px) {
-.prev-button, .next-button {
+ .prev-button, .next-button {
     background-color: rgba(250, 249, 246, 0);
+
 }
 
-.prev-button span, .next-button span {
+ .prev-button span, .next-button span {
     font-size: 10px;
+    color: #FAF9F6;
 }
 
-.prev-button svg, .next-button svg {
+ .prev-button svg, .next-button svg {
     width: 24px;
     height: 24px;
     margin-bottom: 0px;
+    color: #FAF9F6;
+}
+
+ .prev-button:hover, .next-button:hover {
+    background-color: #FAF9F6;
+    color: #001612;
+}
+  
+ .prev-button:hover span, .next-button:hover span {
+    color: #001612;
+}
+  
+ .prev-button:disabled svg, .next-button:disabled svg {
+    fill: #FAF9F6;
+}
+
+.prev-button:hover svg, .next-button:hover svg {
+    stroke: #001612;
   }
 
-.navigation {
+ .navigation {
     justify-content: space-between;
     align-items: center;
     position: static;
     transform: none;
     display: flex;
-    padding: 0% 10% 0%;
+    padding: 3% 10% 3%;
     overflow-anchor: none;
+    background-color: #001612;
     }
 }
 
