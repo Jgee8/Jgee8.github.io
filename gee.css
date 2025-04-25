@@ -287,6 +287,8 @@ img:hover {
 .video {
     width: 100%;
     padding: 5%;
+    outline: 2px solid #001612;
+    margin-bottom: 10%;
 }
 
 .masonry-item-2 {
