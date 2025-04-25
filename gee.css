@@ -26,15 +26,21 @@ header {
 nav {
     font-family: 'oxygen mono';
     display: flex;
-    margin: 5% 10% auto;
+    margin: 5% 5% 0%;
+    font-size: 28px;
+    justify-content: space-between;
+}
+
+.home {
+    display: flex;
+    font-family: 'oxygen mono';
     font-size: 28px;
 }
 
 .links {
     display: flex;
-    font-family: 'alata';
-    font-size: 28px;
-    margin-left: 1%;
+    font-family: 'oxygen mono';
+    font-size: 24px;
 }
 
 .navigation {
@@ -381,13 +387,16 @@ html, body {
     }
     nav {
         font-family: 'oxygen mono';
-        margin: auto;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        margin-left: 5%;
+        margin: 5%;
         font-size: 18px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .links {
+        font-family: 'oxygen mono';
+        margin-right: 5%;
+        font-size: 16px;
+        justify-content: end;
     }
     .wrapper {
         grid-template-columns: 1fr;
@@ -439,19 +448,16 @@ html, body {
   }
 
 .navigation {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     position: static;
     transform: none;
-    left: 0;
-    right: 0;
-    z-index: 1;
     display: flex;
-    padding: 3%;
+    padding: 0% 10% 0%;
     overflow-anchor: none;
     }
 }
+
 
 /* fonts mobile */
 
