@@ -123,6 +123,7 @@ a:link {
     -webkit-text-stroke: none;
 }
 
+
 /* homepage outline text end */ 
 
 
@@ -301,11 +302,16 @@ img:hover {
 
 /* fonts */
 
-.title {      
+.homemenu {      
     margin: 5%;
     font-size: 7.5vw;
     color: #001612;   
 }
+
+.homemenu h1 {
+    all: unset;
+    color: #001612;
+  }
 
 date {
     opacity: 69%;
@@ -317,7 +323,6 @@ date {
 h1 {
     font-size: 7vw;
     font-family: 'alata';
-    text-align: center;
     color: #001612;
 }
 
@@ -363,7 +368,7 @@ html, body {
 
 /* Mobile styles */
 @media (max-width: 600px) {
-    .title {
+    .homemenu {
         font-size: 15vw; /* Adjust font size for smaller screens */
         margin: 3%; /* Reduce margin on mobile */
     }
