@@ -202,9 +202,8 @@ a:any-link {
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #001612;
-    column-gap: 10%;
     margin-top: 5%;
-    margin-bottom: 0%;
+    padding: 0% 10% 0%;
     background-color: #001612;
 }
 
