@@ -24,7 +24,7 @@ header {
 
 li a {
     display: block;
-    margin-left: 3vw;
+    margin-left: 20px;
 }
 
 ul {
@@ -51,6 +51,7 @@ nav {
 .links {
     font-family: 'oxygen mono';
     font-size: 24px;
+    padding: 3px;
 }
 
 .navigation {
