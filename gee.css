@@ -22,6 +22,18 @@ header {
 
 /* nav buttons start */
 
+li a {
+    display: block;
+    margin-left: 3vw;
+}
+
+ul {
+    display: flex;;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     font-family: 'oxygen mono';
     display: flex;
@@ -37,7 +49,6 @@ nav {
 }
 
 .links {
-    display: flex;
     font-family: 'oxygen mono';
     font-size: 24px;
 }
@@ -138,7 +149,6 @@ footer {
 }
 
 .copyright {
-    margin-right: 5%;
     float: right;
 }
 
@@ -152,6 +162,7 @@ a:any-link {
 }
 
 /* footer end */
+
 
 .box {
     background-color: transparent;
@@ -403,8 +414,8 @@ html, body {
         grid-template-columns: 1fr 1fr;
     }
     .links {
+        display: flex;
         font-family: 'oxygen mono';
-        margin-right: 5%;
         font-size: 14px;
         justify-content: end;
     }
