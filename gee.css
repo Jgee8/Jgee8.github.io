@@ -15,9 +15,16 @@ html {
 }
 
 header {
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 3%;
+    background-color: #001612;
+}
+
+.subheader  {
+    margin: 0% 3% 0%;
+}
+
+.top {
+    margin: 0% 10% 10%;
 }
 
 /* nav buttons start */
@@ -187,6 +194,7 @@ a:any-link {
     padding: 24px;
     margin: 10% 0 10%;
     outline: 2px solid #001612;
+    border-radius: 5px;
 }
 
 .wrapper {
@@ -202,8 +210,6 @@ a:any-link {
 
 .wrapper2 {
     pointer-events: none;
-    text-align: center;
-    align-content: center;
     display: grid;
     grid-template-columns: 1fr;
     color: #001612;
@@ -218,6 +224,7 @@ a:any-link {
     align-content: center;
     margin: 5% 10% 10%;
     outline: 2px solid #001612;
+    border-radius: 5px;
 }
 
 .wrapper-description {
@@ -234,7 +241,7 @@ a:any-link {
     pointer-events: none;
     text-align: center;
     align-content: center;
-    margin: 5% 15% 5%;
+    margin: 5% 10% 5%;
     grid-template-columns: 1fr 1fr;
     color: #001612;
     column-gap: 10%;
@@ -269,6 +276,7 @@ img:hover {
 
 .img-container img {
     outline: 2px solid #001612;
+    border-radius: 5px;
   }
 
 .img-container {
@@ -345,12 +353,11 @@ h1 {
     font-size: 7vw;
     line-height: 1.2;
     font-family: 'alata';
-    color: #001612;
+    color: #FAF9F6;
 }
 
 h2 {
     margin-top: 5%;
-    text-align: center;
     font-size: 26px;
     font-family: "oxygen mono";
     font-weight: normal;
@@ -541,11 +548,6 @@ html, body {
 
 /* fonts mobile end*/
 
-@media screen and (max-width: 900px) {
-    .video {
-      margin-top: 10%;
-    }
-  }
 
  /* masonry gallery mobile */
 @media screen and (max-width: 1200px) {
