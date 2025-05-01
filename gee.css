@@ -431,6 +431,9 @@ html, body {
         margin: 5%;
         font-size: 18px;
     }
+    .top {
+        margin: 0% 10% 10%;
+    }
     .links {
         display: flex;
         font-family: 'oxygen mono';
