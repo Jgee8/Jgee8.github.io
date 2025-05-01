@@ -50,9 +50,22 @@ nav {
 
 .links {
     font-family: 'oxygen mono';
-    font-size: 24px;
-    padding: 3px;
+    font-size: 16px;
+    padding: 10px;
+    outline: 2px solid #001612;
+    border-radius: 5px;
 }
+
+.links:hover {
+    background-color: #001612;
+    color: #FAF9F6;
+    padding: 10px; /* adjust the padding value as needed */
+    border-radius: 5px; /* add a border radius to match the .prev-button and .next-button classes */
+  }
+
+  .links:hover a {
+    color: #FAF9F6;
+  }
 
 .navigation {
     display: flex;
@@ -65,19 +78,20 @@ nav {
     right: 0;
     display: flex;
     justify-content: space-between;
-    padding: 3%;
+    padding: 2%;
 }
   
 .prev-button, .next-button {
     border: none;
     padding: 10px 20px;
-    border-radius: 50%;
+    border-radius: 5px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #FAF9F6;
     pointer-events: auto;
+    outline: 2px solid #001612;
   }
   
   
@@ -174,7 +188,6 @@ a:any-link {
     padding: 24px;
     margin: 10% 0 10%;
     outline: 2px solid #001612;
-    z-index: 2;
 }
 
 .wrapper {
@@ -184,7 +197,7 @@ a:any-link {
     grid-template-columns: 1fr 1fr;
     color: #001612;
     column-gap: 10%;
-    margin: 10% 10% 5%;
+    margin: 5% 10% 5%;
     grid-auto-rows: auto;
 }
 
@@ -204,7 +217,6 @@ a:any-link {
     pointer-events: none;
     text-align: center;
     align-content: center;
-    padding: 5%;
     margin: 5% 10% 10%;
     outline: 2px solid #001612;
 }
@@ -332,6 +344,7 @@ date {
 
 h1 {
     font-size: 7vw;
+    line-height: 1.2;
     font-family: 'alata';
     color: #001612;
 }
@@ -392,7 +405,7 @@ html, body {
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 10%;
-        margin-top: 20%;
+        margin-top: 10%;
         color: #001612;   
         font-family: 'oxygen mono';
         font-size: 2.5vw;
@@ -411,14 +424,13 @@ html, body {
         font-family: 'oxygen mono';
         margin: 5%;
         font-size: 18px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
     }
     .links {
         display: flex;
         font-family: 'oxygen mono';
-        font-size: 14px;
+        font-size: 12px;
         justify-content: end;
+        padding: 5px;
     }
     .wrapper {
         grid-template-columns: 1fr;
