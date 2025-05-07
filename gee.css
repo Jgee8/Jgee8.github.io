@@ -138,7 +138,9 @@ outline {
 }
 
 outline:hover { 
-    -webkit-text-fill-color:#001612;
+    -webkit-text-fill-color: #FAF9F6;
+    background-color: #001612;
+    -webkit-text-stroke: .03em #faf9f6;  
 }
 
 a:hover { 
@@ -269,9 +271,8 @@ img {
     width: 100%;
 }
 
-img:hover {
-    opacity: 80%; 
-    background-color:transparent;
+.img-container:hover {
+    opacity: 90%;
 }
 
 .img-container img {
@@ -281,6 +282,7 @@ img:hover {
 
 .img-container {
     margin-bottom: 5%;
+    transition: filter 0.2s ease-in-out;
 }
 
 .img-container-2 {
@@ -537,7 +539,7 @@ html, body {
       font-size: 12px;
     }
     h1 {
-      font-size: 38px;
+      font-size: 48px;
     }
     h2 {
       font-size: 12px;
