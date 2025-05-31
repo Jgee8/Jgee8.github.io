@@ -20,7 +20,7 @@ header {
 }
 
 .subheader  {
-    margin: 0%;
+    margin: 0% 3% 0% 3%;
 }
 
 .top {
@@ -108,7 +108,7 @@ nav {
   }
   
   .prev-button span, .next-button span {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: light;
     color: #001612;
     font-family: 'oxygen mono';
@@ -138,9 +138,7 @@ outline {
 }
 
 outline:hover { 
-    -webkit-text-fill-color: #FAF9F6;
-    background-color: #001612;
-    -webkit-text-stroke: .03em #faf9f6;  
+    -webkit-text-fill-color: #001612;
 }
 
 a:hover { 
