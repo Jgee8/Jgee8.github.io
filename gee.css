@@ -197,6 +197,10 @@ a:any-link {
     border-radius: 5px;
 }
 
+.box-menu:hover {
+    cursor: pointer;
+}
+
 .wrapper {
     text-align: start;
     align-content: center;
