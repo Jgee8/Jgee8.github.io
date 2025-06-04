@@ -407,31 +407,25 @@ html, body {
 }
 
 @media screen and (max-width:600px) {
-    footer{
+    footer {
         clear: both;
         position: relative;
-        margin: 10% 10% 5% 10%;
+        margin: 10% 3% 10%;
         color: #001612;   
         font-family: 'oxygen mono';
         font-size: 2.5vw;
     }
-
-    .wrapper-description {
-        align-content: center;
-        display: inherit;
-        grid-template-columns: 1fr 1fr;
-        color: #001612;
-        column-gap: 10%;
-        margin-top: 5%;
-        margin-bottom: 0%;
+    header {
+        padding-left: 3%;
+        background-color: #001612;
+    }
+    .top {
+        margin: 0% 3% 10%;
     }
     nav {
         font-family: 'oxygen mono';
-        margin: 5% 10% 0% 10%;
+        margin: 5% 3% 15%;
         font-size: 18px;
-    }
-    .top {
-        margin: 0% 10% 10%;
     }
     .links {
         display: flex;
@@ -445,16 +439,26 @@ html, body {
         color: #FAF9F6;
         padding: 5px; /* adjust the padding value as needed */
         border-radius: 5px; /* add a border radius to match the .prev-button and .next-button classes */
-      }
+    }
     .wrapper {
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
+        margin: 5% 3% 5%;
     }
     .wrapper2 {
         grid-template-columns: 1fr;
     }
     .wrapperhalf {
         grid-template-columns: 1fr;
+    }
+    .wrapper-description {
+        align-content: center;
+        display: inherit;
+        grid-template-columns: 1fr 1fr;
+        color: #001612;
+        column-gap: 10%;
+        margin-top: 5%;
+        margin-bottom: 0%;
     }
 }
   
