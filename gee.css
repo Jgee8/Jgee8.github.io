@@ -444,7 +444,15 @@ html, body {
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
         margin: 5% 3% 5%;
-    }
+    }   
+    .wrapper-boxed {
+        pointer-events: none;
+        text-align: center;
+        align-content: center;
+        margin: 5% 3% 10%;
+        outline: 2px solid #001612;
+        border-radius: 5px;
+}        
     .wrapper2 {
         grid-template-columns: 1fr;
     }
@@ -521,7 +529,7 @@ html, body {
     position: static;
     transform: none;
     display: flex;
-    padding: 3% 10% 3%;
+    padding: 3% 3% 3%;
     overflow-anchor: none;
     }
 }
@@ -559,29 +567,34 @@ html, body {
 @media screen and (max-width: 1200px) {
     .masonry-container {
         column-count: 3;
+        margin: 10% 3% 10%;
     }
 }
     
 @media screen and (max-width: 900px) {
     .masonry-container {
         column-count: 2;
+        margin: 10% 3% 10%;
     }
 }
         
 @media screen and (max-width: 600px) {
     .masonry-container {
         column-count: 1;
+        margin: 10% 3% 10%;
     }
 }
 
 @media screen and (max-width: 900px) {
     .masonry-container-2 {
         column-count: 2;
+        margin: 10% 3% 10%;
     }
 }
 
 @media screen and (max-width: 600px) {
     .masonry-container-2 {
         column-count: 1;
+        margin: 10% 3% 10%;
     }
 }
