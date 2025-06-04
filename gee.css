@@ -24,7 +24,7 @@ header {
 }
 
 .top {
-    margin: 0% 10% 5%;
+    margin: 0% 10% 0%;
 }
 
 /* nav buttons start */
@@ -44,7 +44,7 @@ ul {
 nav {
     font-family: 'oxygen mono';
     display: flex;
-    margin: 5% 5% 0%;
+    margin: 3% 10% 0% 10%;
     font-size: 28px;
     justify-content: space-between;
 }
@@ -162,9 +162,7 @@ a:link {
 
 footer {
     font-size: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+    margin: 0% 10% 5% 10%;
     color: #001612;   
     font-family: 'oxygen mono';
 }
@@ -208,7 +206,7 @@ a:any-link {
     grid-template-columns: 1fr 1fr;
     color: #001612;
     column-gap: 10%;
-    margin: 5% 10% 5%;
+    margin: 0% 10% 5%;
     grid-auto-rows: auto;
 }
 
@@ -412,11 +410,7 @@ html, body {
     footer{
         clear: both;
         position: relative;
-        margin: auto;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 10%;
-        margin-top: 10%;
+        margin: 10% 10% 5% 10%;
         color: #001612;   
         font-family: 'oxygen mono';
         font-size: 2.5vw;
@@ -433,7 +427,7 @@ html, body {
     }
     nav {
         font-family: 'oxygen mono';
-        margin: 5%;
+        margin: 5% 10% 0% 10%;
         font-size: 18px;
     }
     .top {
