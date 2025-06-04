@@ -310,7 +310,7 @@ img {
 .masonry-item {
     break-inside: avoid;
     margin-bottom: 20px;
-    border-radius: 0px;
+    border-radius: 5px;
     overflow: hidden;
     pointer-events: none;
 }
@@ -324,6 +324,7 @@ img {
     width: 100%;
     padding: 5%;
     outline: 2px solid #001612;
+    border-radius: 5px;
     margin-bottom: 10%;
 }
 
@@ -455,6 +456,7 @@ html, body {
 }        
     .wrapper2 {
         grid-template-columns: 1fr;
+        margin: 5% 6% 5%;
     }
     .wrapperhalf {
         grid-template-columns: 1fr;
