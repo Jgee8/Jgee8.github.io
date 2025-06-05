@@ -335,12 +335,13 @@ img {
 
 .homemenu {      
     color: #001612;
-    margin: 5% 10% 5% 10%;
+    margin: 0px 10% 0px;
 }
 
 .homemenu h1 {
     color: #001612;
-    font-size: 120px;
+    font-size: 10vw;
+    line-height: 110%;
     letter-spacing: -3px;
   }
 
@@ -406,7 +407,7 @@ html, body {
     }
     .homemenu h1 {
         color: #001612;
-        font-size: 55px;
+        font-size: 14vw;
     }
     footer {
         clear: both;
@@ -550,7 +551,7 @@ html, body {
       font-size: 12px;
     }
     h1 {
-      font-size: 48px;
+      font-size: 42px;
     }
     h2 {
       font-size: 12px;
