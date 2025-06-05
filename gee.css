@@ -44,7 +44,7 @@ ul {
 nav {
     font-family: 'oxygen mono';
     display: flex;
-    margin: 3% 10% 0% 10%;
+    margin: 3% 10% 5% 10%;
     font-size: 28px;
     justify-content: space-between;
 }
@@ -162,7 +162,7 @@ a:link {
 
 footer {
     font-size: 20px;
-    margin: 0% 10% 5% 10%;
+    margin: 5% 10% 3% 10%;
     color: #001612;   
     font-family: 'oxygen mono';
 }
@@ -206,7 +206,7 @@ a:any-link {
     grid-template-columns: 1fr 1fr;
     color: #001612;
     column-gap: 10%;
-    margin: 0% 10% 5%;
+    margin: 0% 10% 0%;
     grid-auto-rows: auto;
 }
 
@@ -340,7 +340,7 @@ img {
 
 .homemenu h1 {
     color: #001612;
-    font-size: 6.5vw;
+    font-size: 6vw;
     line-height: 120%;
     letter-spacing: -3px;
   }
