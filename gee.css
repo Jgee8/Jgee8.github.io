@@ -134,7 +134,7 @@ nav {
 
 outline {    
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: .03em #001612;
+    -webkit-text-stroke: .015em #001612;
 }
 
 outline:hover { 
@@ -206,7 +206,7 @@ a:any-link {
     grid-template-columns: 1fr 1fr;
     color: #001612;
     column-gap: 10%;
-    margin: 5% 10% 5%;
+    margin: 0% 10% 5%;
     grid-auto-rows: auto;
 }
 
@@ -335,14 +335,14 @@ img {
 /* fonts */
 
 .homemenu {      
-    margin: 5%;
-    font-size: 7.5vw;
-    color: #001612;   
+    color: #001612;
+    margin: 5% 10% 5% 10%;
+    letter-spacing: -5px;
 }
 
 .homemenu h1 {
-    all: unset;
     color: #001612;
+    font-size: 140px;
   }
 
 date {
@@ -353,10 +353,11 @@ date {
 }
 
 h1 {
-    font-size: 7vw;
+    font-size: 130px;
     line-height: 1.2;
     font-family: 'alata';
     color: #FAF9F6;
+    font-weight: bold;
 }
 
 h2 {
@@ -402,12 +403,12 @@ html, body {
 /* Mobile styles */
 @media (max-width: 600px) {
     .homemenu {
-        font-size: 15vw; /* Adjust font size for smaller screens */
         margin: 3%; /* Reduce margin on mobile */
     }
-}
-
-@media screen and (max-width:600px) {
+    .homemenu h1 {
+        color: #001612;
+        font-size: 60px;
+    }
     footer {
         clear: both;
         position: relative;
