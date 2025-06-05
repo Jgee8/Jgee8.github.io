@@ -407,7 +407,9 @@ html, body {
     }
     .homemenu h1 {
         color: #001612;
-        font-size: 14vw;
+        font-size: 13vw;
+        letter-spacing: -1px;
+        word-wrap: break-word;
     }
     footer {
         clear: both;
