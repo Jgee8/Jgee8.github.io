@@ -7,7 +7,7 @@
 
 body {
     margin: auto;
-    font-family: 'Alata';
+    font-family: 'Poppins';
 }
 
 html {
@@ -337,12 +337,12 @@ img {
 .homemenu {      
     color: #001612;
     margin: 5% 10% 5% 10%;
-    letter-spacing: -5px;
 }
 
 .homemenu h1 {
     color: #001612;
-    font-size: 140px;
+    font-size: 120px;
+    letter-spacing: -3px;
   }
 
 date {
@@ -355,7 +355,7 @@ date {
 h1 {
     font-size: 130px;
     line-height: 1.2;
-    font-family: 'alata';
+    font-family: 'Poppins';
     color: #FAF9F6;
     font-weight: bold;
 }
@@ -407,7 +407,7 @@ html, body {
     }
     .homemenu h1 {
         color: #001612;
-        font-size: 60px;
+        font-size: 55px;
     }
     footer {
         clear: both;
