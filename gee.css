@@ -459,7 +459,8 @@ html, body {
     }        
     .wrapper2 {
         grid-template-columns: 1fr;
-        margin: 5% 6% 5%;
+        margin: 0% 3% 0%;
+  };
     }
     .wrapperhalf {
         grid-template-columns: 1fr;
