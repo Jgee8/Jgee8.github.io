@@ -352,7 +352,7 @@ img {
 .homemenu h1 {
     color: #001612;
     font-size: 8vw;
-    line-height: 1.4;
+    line-height: 1.2;
     letter-spacing: -3px;
 }
 
@@ -374,7 +374,7 @@ h1 {
 h2 {
     margin-top: 5%;
     font-size: 26px;
-    font-family: "poppins";
+    font-family: "oxygen mono";
     font-weight: normal;
     line-height: 1.6;
 }
@@ -417,14 +417,6 @@ html, body {
         letter-spacing: -1px;
         word-wrap: break-word;
     }
-    footer {
-        clear: both;
-        position: relative;
-        margin: 10% 3% 10%;
-        color: #001612;   
-        font-family: 'oxygen mono';
-        font-size: 2.5vw;
-    }
     header {
         padding-left: 3%;
         background-color: #001612;
@@ -432,10 +424,23 @@ html, body {
     .top {
         margin: 0% 3% 10%;
     }
+    footer {
+        clear: both;
+        position: relative;
+        margin: 10% 3% 10%;
+        color: #001612;   
+        font-family: 'oxygen mono';
+        font-size: 2.5vw;
+        padding: 0% !important;
+    }
     nav {
         font-family: 'oxygen mono';
         margin: 5% 3% 15%;
         font-size: 18px;
+        padding: 0% !important;
+    }
+    .container {
+        padding: 0% !important;
     }
     .links {
         display: flex;
