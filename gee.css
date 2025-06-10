@@ -406,7 +406,7 @@ html, body {
     .homemenu h1 {
         color: #001612;
         font-size: 12vw;
-        line-height: 120%;
+        line-height: 140%;
         letter-spacing: -1px;
         word-wrap: break-word;
     }
@@ -460,7 +460,6 @@ html, body {
     .wrapper2 {
         grid-template-columns: 1fr;
         margin: 0% 3% 0%;
-  };
     }
     .wrapperhalf {
         grid-template-columns: 1fr;
@@ -491,7 +490,7 @@ html, body {
         margin-top: 0%;
         margin-left: 0%;
         margin-right: 0%;
-}
+    }
 }
   
 @media all and (min-width:501px) {
