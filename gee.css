@@ -346,7 +346,7 @@ img {
 
 .break {
     width: 100vw;
-    height: 15%;
+    height: 10vw;
 }
 
 .homemenu h1 {
@@ -610,7 +610,7 @@ html, body {
         padding: 3%;
     }
     .homemenu h1 {
-        padding: 3%;
+        padding: 0% 3% 0%; 
    }
 }
 
