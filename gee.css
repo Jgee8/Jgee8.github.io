@@ -352,15 +352,15 @@ img {
 .homemenu h1 {
     color: #001612;
     font-size: 8vw;
-    line-height: 120%;
+    line-height: 1.4;
     letter-spacing: -3px;
-  }
+}
 
 date {
     opacity: 69%;
     font-family: 'oxygen mono';
     font-size: 20px;
-    line-height: 32px;
+    line-height: 1.6px;
 }
 
 h1 {
@@ -374,7 +374,7 @@ h1 {
 h2 {
     margin-top: 5%;
     font-size: 26px;
-    font-family: "oxygen mono";
+    font-family: "poppins";
     font-weight: normal;
     line-height: 1.6;
 }
@@ -396,7 +396,7 @@ description {
 p {
     font-family: 'oxygen mono';
     font-size: 20px;
-    line-height: 32px;
+    line-height: 1.5;
     color: #000;
 }
 
@@ -413,7 +413,7 @@ html, body {
     .homemenu h1 {
         color: #001612;
         font-size: 12vw;
-        line-height: 140%;
+        line-height: 1.4;
         letter-spacing: -1px;
         word-wrap: break-word;
     }
@@ -570,7 +570,7 @@ html, body {
 @media (max-width: 600px) {
     p {
       font-size: 14px;
-      line-height: 22.4px;
+      line-height: 1.5;
     }
     description {
       font-size: 22px;
@@ -582,7 +582,7 @@ html, body {
       font-size: 42px;
     }
     h2 {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: normal;
     }
     h3 {
@@ -593,6 +593,20 @@ html, body {
 
 /* fonts mobile end*/
 
+@media (max-width: 1440px) {
+    .container {
+        padding: 3%;
+    }
+    nav {
+        padding: 3%;
+    }
+    footer {
+        padding: 3%;
+    }
+    .homemenu h1 {
+        padding: 3%;
+   }
+}
 
  /* masonry gallery mobile */
 @media screen and (max-width: 1200px) {
