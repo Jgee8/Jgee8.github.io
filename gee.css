@@ -18,6 +18,7 @@ html {
 header {
     padding-left: 3%;
     background-color: #001612;
+    border-radius: 15px;
 }
 
 .subheader  {
@@ -197,6 +198,8 @@ a:any-link {
     margin: 10% 0% 5%;
     outline: 2px solid #001612;
     border-radius: 5px;
+    width: 100%;
+    min-height: 86%;
 }
 
 .box-menu:hover {
@@ -346,12 +349,12 @@ img {
 
 .break {
     width: 100vw;
-    height: 10vw;
+    height: 5vw;
 }
 
 .homemenu h1 {
     color: #001612;
-    font-size: 8vw;
+    font-size: 115px;
     line-height: 1.2;
     letter-spacing: -3px;
 }
@@ -601,13 +604,13 @@ html, body {
 
 @media (max-width: 1440px) {
     .container {
-        padding: 3%;
+        padding: 0% 3% 0%;
     }
     nav {
-        padding: 3%;
+        padding: 0% 3% 0%;
     }
     footer {
-        padding: 3%;
+        padding: 0% 3% 0%;
     }
     .homemenu h1 {
         padding: 0% 3% 0%; 
