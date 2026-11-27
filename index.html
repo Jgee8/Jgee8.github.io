@@ -1,253 +1,179 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>gee</title>
-      <link rel="icon" type="image/x-icon" href="images/BLUE.png">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>gee</title>
+        <link rel="icon" type="image/x-icon" href="images/BLUE.png">
         <link rel="stylesheet" type="text/css" href="gee.css">
-     
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <style>
-            .motion-preview {
-                container-type: size;
-                inset: 0;
-                overflow: hidden;
-                pointer-events: none;
-                position: absolute;
-                --motion-video-ratio: 1;
-            }
-
-            .motion-preview iframe {
-                aspect-ratio: var(--motion-video-ratio);
-                border: 0;
-                height: max(100cqh, calc(100cqw / var(--motion-video-ratio)));
-                left: 50%;
-                opacity: 1;
-                pointer-events: none;
-                position: absolute;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                width: max(100cqw, calc(100cqh * var(--motion-video-ratio)));
-            }
-
-            .motion-preview::after {
-                background: rgba(0, 0, 0, 0.5);
-                content: "";
-                inset: 0;
-                pointer-events: none;
-                position: absolute;
-                z-index: 1;
-            }
-
-            .home-card .card-copy {
-                z-index: 2;
-            }
-        </style>
-    <script src="theme.js" defer></script>
-</head>
-
-    <nav>
-      <span class="Home">
-        <a href = "/">Home</a>
-      </span>
-    </nav>
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="theme.js" defer></script>
+    </head>
     <body>
-
-    <main>
-          
-        <div class="homemenu">
-            <h1>Jiawei Gee,
-            <span class="desktop-br"></span>
-            <span class="mobile-br"><br></span>
-          
-            <a href="#Gallery"><outline>Designer</outline></a>,
-            <span class="desktop-br"></span>
-            <span class="mobile-br"><br></span>
-            
-            <a href="photography.html"><outline>Photographer</outline>,</a>
-            <span class="desktop-br"></span> 
-            <span class="mobile-br"><br></span>
-          
-            Cinephile.
-            </h1>
-        </div>
-        
-    </main>
-
-    <div class="container">
-
-    
-    <div class="wrapper">
-        <div id="Gallery"></div>
-        <a href="webdesign.html" style="text-decoration: none; color: inherit;">
-            <div class="box-menu home-card">
-                <div class="img-container">
-                    <img src="images/arose.jpg" alt="Web design portfolio." style="width:100%">
-                    <div class="card-copy">
-                        <date>2022 -</date>
-                        <br>
-                        <description>WEB DESIGN</description>
-                    </div>
+        <nav>
+            <span class="Home">
+                <a href="/">Home</a>
+            </span>
+        </nav>
+        <main>
+            <div class="homemenu">
+                <h1>Jiawei Gee,
+                    <span class="desktop-br"></span>
+                    <span class="mobile-br"><br></span>
+                    <a href="#Gallery"><outline>Designer</outline></a>,
+                        <span class="desktop-br"></span>
+                        <span class="mobile-br"><br></span>
+                        <a href="photography.html"><outline>Photographer</outline>,</a>
+                        <span class="desktop-br"></span>
+                        <span class="mobile-br"><br></span>
+                        Cinephile.
+                    </h1>
+                </div>
+            </main>
+            <div class="container">
+                <div class="wrapper">
+                    <div id="Gallery"></div>
+                    <a href="webdesign.html" class="card-link">
+                        <div class="box-menu home-card">
+                            <div class="img-container">
+                                <img src="images/arose.jpg" alt="Web design portfolio.">
+                                <div class="card-copy">
+                                    <date>2022 -</date>
+                                    <br>
+                                    <description>WEB DESIGN</description>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="video.html" class="card-link">
+                        <div class="box-menu home-card">
+                            <div class="img-container">
+                                <div class="motion-preview" aria-hidden="true">
+                                    <iframe src="https://player.vimeo.com/video/1057407025?h=7d254f66b7&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Ben Horvat promo preview" loading="lazy" tabindex="-1"></iframe>
+                                </div>
+                                <div class="card-copy">
+                                    <date>2022 -</date>
+                                    <br>
+                                    <description>MOTION</description>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="graphicdesign.html" class="card-link">
+                        <div class="box-menu home-card">
+                            <div class="img-container">
+                                <img src="images/p2pgraphics.jpg" alt="Graphic design portfolio with emails, banners, and social ads.">
+                                <div class="card-copy">
+                                    <date>2020 -</date>
+                                    <br>
+                                    <description>GRAPHIC DESIGN</description>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </a>
-    
-        <a href="video.html" style="text-decoration: none; color: inherit;">
-            <div class="box-menu home-card">
-                <div class="img-container">
-                    <div class="motion-preview" aria-hidden="true">
-                        <iframe src="https://player.vimeo.com/video/1057407025?h=7d254f66b7&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Ben Horvat promo preview" loading="lazy" tabindex="-1"></iframe>
-                    </div>
-                    <div class="card-copy">
-                        <date>2022 -</date>
-                        <br>
-                        <description>MOTION</description>
-                    </div>
-                </div>
+            <footer>
+                <div class="social">
+                    <a href="mailto: geejustin80@gmail.com">Email</a>,
+                        <a href="images/resume-gee-2026.pdf">Resume</a>,
+                        <a href="https://www.linkedin.com/in/jiaweigee">Linkedin</a>
             </div>
-        </a>
-
-        <a href="graphicdesign.html" style="text-decoration: none; color: inherit;">
-            <div class="box-menu home-card">
-                <div class="img-container">
-                    <img src="images/p2pgraphics.jpg" alt="Graphic design portfolio with emails, banners, and social ads." style="width:100%">
-                    <div class="card-copy">
-                        <date>2020 -</date>
-                        <br>
-                        <description>GRAPHIC DESIGN</description>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-    
-    </div>  
-
-    </div>  
-
-    <footer>
-        
-        <a class="social">
-        <a href="mailto: geejustin80@gmail.com">Email</a>,
-        <a href="images/resume-gee-2026.pdf">Resume</a>,
-        <a href="https://www.linkedin.com/in/jiaweigee">Linkedin</a>
-        </a>   
-            
-        <a class="copyright">Design by Jiawei(Justin) Gee</a>
-
-    </footer>
-    
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <script>
-        (function () {
-            var preview = document.querySelector(".motion-preview");
-            if (!preview) return;
-
-            var link = preview.closest("a");
-            var player = new Vimeo.Player(preview.querySelector("iframe"));
-            var isPointerOver = false;
-            var isFocused = false;
-            var isPreviewing = false;
-            var isResetting = false;
-            var previewDuration = 10;
-
-            async function updateVideoAspectRatio() {
-                try {
-                    var dimensions = await Promise.all([
-                        player.getVideoWidth(),
-                        player.getVideoHeight()
-                    ]);
-                    if (dimensions[0] > 0 && dimensions[1] > 0) {
-                        preview.style.setProperty("--motion-video-ratio", dimensions[0] / dimensions[1]);
-                    }
-                } catch (error) {
-                    console.error("Could not size Motion card video:", error);
-                }
-            }
-
-            async function startPreview() {
-                if (isPreviewing) return;
-
-                isPreviewing = true;
-                try {
-                    await player.setMuted(true);
-                    await player.setLoop(true);
-                    if (isPreviewing) {
-                        await player.play();
-                    }
-                } catch (error) {
-                    isPreviewing = false;
-                    console.error("Could not preview Motion card video:", error);
-                }
-            }
-
-            async function stopPreview() {
-                if (isPointerOver || isFocused || !isPreviewing) return;
-
-                isPreviewing = false;
-                try {
-                    await player.pause();
-                    await player.setCurrentTime(0);
-                } catch (error) {
-                    console.error("Could not stop Motion card preview:", error);
-                }
-            }
-
-            async function restartPreview() {
-                if (!isPreviewing || isResetting) return;
-
-                isResetting = true;
-                try {
-                    await player.pause();
-                    await player.setCurrentTime(0);
-                    if (isPreviewing) {
-                        await player.play();
-                    }
-                } catch (error) {
-                    console.error("Could not loop Motion card preview:", error);
-                } finally {
-                    isResetting = false;
-                }
-            }
-
-            player.on("loaded", updateVideoAspectRatio);
-            player.ready().then(updateVideoAspectRatio).catch(function (error) {
-                console.error("Could not initialize Motion card video sizing:", error);
-            });
-
-            player.on("timeupdate", function (data) {
-                if (data.seconds >= previewDuration) {
-                    restartPreview();
-                }
-            });
-            player.on("ended", restartPreview);
-
-            link.addEventListener("pointerenter", function () {
-                isPointerOver = true;
-                startPreview();
-            });
-
-            link.addEventListener("pointerleave", function () {
-                isPointerOver = false;
-                stopPreview();
-            });
-
-            link.addEventListener("focus", function () {
-                isFocused = true;
-                startPreview();
-            });
-
-            link.addEventListener("blur", function () {
-                isFocused = false;
-                stopPreview();
-            });
-        })();
-    </script>
-</body>
-   
+            <a class="copyright">Design by Jiawei(Justin) Gee</a>
+        </footer>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+                <script>
+                    (function () {
+                        var preview = document.querySelector(".motion-preview");
+                        if (!preview) return;
+                        var link = preview.closest("a");
+                        var player = new Vimeo.Player(preview.querySelector("iframe"));
+                        var isPointerOver = false;
+                        var isFocused = false;
+                        var isPreviewing = false;
+                        var isResetting = false;
+                        var previewDuration = 10;
+                        async function updateVideoAspectRatio() {
+                            try {
+                                var dimensions = await Promise.all([
+                                player.getVideoWidth(),
+                                player.getVideoHeight()
+                                ]);
+                                if (dimensions[0] > 0 && dimensions[1] > 0) {
+                                    preview.style.setProperty("--motion-video-ratio", dimensions[0] / dimensions[1]);
+                                }
+                            } catch (error) {
+                                console.error("Could not size Motion card video:", error);
+                            }
+                        }
+                        async function startPreview() {
+                            if (isPreviewing) return;
+                            isPreviewing = true;
+                            try {
+                                await player.setMuted(true);
+                                await player.setLoop(true);
+                                if (isPreviewing) {
+                                    await player.play();
+                                }
+                            } catch (error) {
+                                isPreviewing = false;
+                                console.error("Could not preview Motion card video:", error);
+                            }
+                        }
+                        async function stopPreview() {
+                            if (isPointerOver || isFocused || !isPreviewing) return;
+                            isPreviewing = false;
+                            try {
+                                await player.pause();
+                                await player.setCurrentTime(0);
+                            } catch (error) {
+                                console.error("Could not stop Motion card preview:", error);
+                            }
+                        }
+                        async function restartPreview() {
+                            if (!isPreviewing || isResetting) return;
+                            isResetting = true;
+                            try {
+                                await player.pause();
+                                await player.setCurrentTime(0);
+                                if (isPreviewing) {
+                                    await player.play();
+                                }
+                            } catch (error) {
+                                console.error("Could not loop Motion card preview:", error);
+                            } finally {
+                                isResetting = false;
+                            }
+                        }
+                        player.on("loaded", updateVideoAspectRatio);
+                        player.ready().then(updateVideoAspectRatio).catch(function (error) {
+                            console.error("Could not initialize Motion card video sizing:", error);
+                        });
+                        player.on("timeupdate", function (data) {
+                            if (data.seconds >= previewDuration) {
+                                restartPreview();
+                            }
+                        });
+                        player.on("ended", restartPreview);
+                        link.addEventListener("pointerenter", function () {
+                            isPointerOver = true;
+                            startPreview();
+                        });
+                        link.addEventListener("pointerleave", function () {
+                            isPointerOver = false;
+                            stopPreview();
+                        });
+                        link.addEventListener("focus", function () {
+                            isFocused = true;
+                            startPreview();
+                        });
+                        link.addEventListener("blur", function () {
+                            isFocused = false;
+                            stopPreview();
+                        });
+                    })();
+                </script>
+    </body>
 </html>

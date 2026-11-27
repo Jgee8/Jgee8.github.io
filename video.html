@@ -1,499 +1,269 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Gallery</title>
-    <link rel="icon" type="image/x-icon" href="images/BLUE.png">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Gallery</title>
+        <link rel="icon" type="image/x-icon" href="images/BLUE.png">
         <link href="gee.css" rel="stylesheet" type="text/css">
-       
-<link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <style>
-        .video-frame {
-            position: relative;
-            padding: 100% 0 0;
-            overflow: hidden;
-            margin-bottom: 1em;
-        }
-
-        .video-frame iframe {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        .video-controls {
-            align-items: center;
-            background: linear-gradient(transparent, rgba(0, 22, 18, 0.85));
-            bottom: 0;
-            color: #fff;
-            display: flex;
-            font-family: 'oxygen mono';
-            gap: 12px;
-            left: 0;
-            padding: 18px 12px 10px;
-            position: absolute;
-            right: 0;
-            z-index: 2;
-        }
-
-        .video-controls[hidden] {
-            display: none;
-        }
-
-        .video-control-button {
-            align-items: center;
-            background: transparent;
-            border: 0;
-            color: inherit;
-            cursor: pointer;
-            display: flex;
-            flex: 0 0 auto;
-            font: inherit;
-            justify-content: center;
-            padding: 2px;
-        }
-
-        .video-control-button svg {
-            fill: none;
-            height: 18px;
-            stroke: currentColor;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-width: 1.7;
-            width: 18px;
-        }
-
-        .video-control-button:focus-visible,
-        .video-progress:focus-visible {
-            outline: 2px solid #fff;
-            outline-offset: 2px;
-        }
-
-        .video-time {
-            flex: 0 0 auto;
-            font-size: 11px;
-            white-space: nowrap;
-        }
-
-        .video-progress {
-            appearance: none;
-            background: rgba(255, 255, 255, 0.45);
-            cursor: pointer;
-            flex: 1 1 auto;
-            font: inherit;
-            height: 2px;
-            margin: 0;
-            min-width: 0;
-        }
-
-        .video-progress::-webkit-slider-thumb {
-            appearance: none;
-            background: #fff;
-            border: 0;
-            border-radius: 50%;
-            height: 8px;
-            width: 8px;
-        }
-
-        .video-progress::-moz-range-thumb {
-            background: #fff;
-            border: 0;
-            border-radius: 50%;
-            height: 8px;
-            width: 8px;
-        }
-
-        .video-controls .pause-icon,
-        .video-controls .mute-slash {
-            display: none;
-        }
-
-        .video-controls.is-playing .play-icon,
-        .video-controls.is-muted .mute-icon {
-            display: none;
-        }
-
-        .video-controls.is-playing .pause-icon,
-        .video-controls.is-muted .mute-slash {
-            display: initial;
-        }
-
-        .video-trigger {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            border: 0;
-            background: transparent;
-            cursor: pointer;
-        }
-
-        .video-trigger::before,
-        .video-trigger::after {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            opacity: 1;
-            transition: opacity 0.2s ease;
-        }
-
-        .video-trigger::before {
-            width: 56px;
-            height: 56px;
-            content: "";
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            background: rgba(0, 22, 18, 0.75);
-        }
-
-        .video-trigger::after {
-            content: "";
-            transform: translate(-35%, -50%);
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-            border-left: 16px solid #fff;
-        }
-
-        .video-trigger.is-playing::after {
-            width: 16px;
-            height: 20px;
-            transform: translate(-50%, -50%);
-            border: 0;
-            background: linear-gradient(to right, #fff 0 5px, transparent 5px 11px, #fff 11px 16px);
-        }
-
-        .video-trigger:hover::before,
-        .video-trigger:hover::after,
-        .video-trigger:focus::before,
-        .video-trigger:focus::after {
-            opacity: 0;
-        }
-
-        .video-trigger:focus-visible {
-            outline: 3px solid var(--site-dark);
-            outline-offset: -3px;
-        }
-
-        .video-meta-separator {
-            white-space: nowrap;
-        }
-    </style>
-    <script src="theme.js" defer></script>
-</head>
-
-<body>
-    
-    <nav>
-      <span class="Home">
-        <a href = "/">Home</a>
-      </span>
-    </nav>
-
-    <div class="container">
-    
-    <div class="top">
-        <header>
-            <h1>Motion</h1>   
-        </header>
-
-    </div>    
-
-    <div class="wrapper2">
-               
-
-        <div class="video">
-            <div class="video-frame">
-                <iframe src="https://player.vimeo.com/video/1057407050?h=a9e96e9977&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Aaron Jay Young video" loading="lazy" tabindex="-1"></iframe>
-                <button class="video-trigger" type="button" aria-label="Play Aaron Jay Young video"></button>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="theme.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <span class="Home">
+                <a href="/">Home</a>
+            </span>
+        </nav>
+        <div class="container">
+            <div class="top">
+                <header>
+                    <h1>Motion</h1>
+                </header>
             </div>
-            <description>aaronjayyoung</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2024</date></span>
-        </div>
-
-        <div class="video">
-            <div class="video-frame">
-                <iframe src="https://player.vimeo.com/video/1057407025?h=7d254f66b7&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Ben Horvat promo" loading="lazy" tabindex="-1"></iframe>
-                <button class="video-trigger" type="button" aria-label="Play Ben Horvat promo"></button>
+            <div class="wrapper2">
+                <div class="video">
+                    <div class="video-frame">
+                        <iframe src="https://player.vimeo.com/video/1057407050?h=a9e96e9977&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Aaron Jay Young video" loading="lazy" tabindex="-1"></iframe>
+                        <button class="video-trigger" type="button" aria-label="Play Aaron Jay Young video"></button>
+                    </div>
+                    <description>aaronjayyoung</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2024</date></span>
+                </div>
+                <div class="video">
+                    <div class="video-frame">
+                        <iframe src="https://player.vimeo.com/video/1057407025?h=7d254f66b7&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Ben Horvat promo" loading="lazy" tabindex="-1"></iframe>
+                        <button class="video-trigger" type="button" aria-label="Play Ben Horvat promo"></button>
+                    </div>
+                    <description>Benhorvatphoto</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2023</date></span>
+                </div>
+                <div class="video">
+                    <div class="video-frame">
+                        <iframe src="https://player.vimeo.com/video/1057407017?h=739c07402a&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Ben Horvat testimonial" loading="lazy" tabindex="-1"></iframe>
+                        <button class="video-trigger" type="button" aria-label="Play Ben Horvat testimonial"></button>
+                    </div>
+                    <description>Benhorvatphoto</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2024</date></span>
+                </div>
+                <div class="video">
+                    <div class="video-frame">
+                        <iframe src="https://player.vimeo.com/video/1057406996?h=78fbdd52d2&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Show Your Spark Justene" loading="lazy" tabindex="-1"></iframe>
+                        <button class="video-trigger" type="button" aria-label="Play Show Your Spark Justene video"></button>
+                    </div>
+                    <description>Showyourspark</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2024</date></span>
+                </div>
+                <div class="video">
+                    <div class="video-frame">
+                        <iframe src="https://player.vimeo.com/video/1057406967?h=447a33af4d&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Show Your Spark Kim" loading="lazy" tabindex="-1"></iframe>
+                        <button class="video-trigger" type="button" aria-label="Play Show Your Spark Kim video"></button>
+                    </div>
+                    <description>Showyourspark</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2023</date></span>
+                </div>
+                <div class="video">
+                    <div class="video-frame">
+                        <iframe src="https://player.vimeo.com/video/1057406931?h=5315ae6edc&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Show Your Spark Alicia" loading="lazy" tabindex="-1"></iframe>
+                        <button class="video-trigger" type="button" aria-label="Play Show Your Spark Alicia video"></button>
+                    </div>
+                    <description>Showyourspark</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2023</date></span>
+                </div>
+                <div class="video">
+                    <div class="video-frame">
+                        <iframe src="https://player.vimeo.com/video/1057407046?h=03b07296a4&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Provocateur Images sale promo" loading="lazy" tabindex="-1"></iframe>
+                        <button class="video-trigger" type="button" aria-label="Play Provocateur Images sale promo"></button>
+                    </div>
+                    <description>Provacatuer Images</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2023</date></span>
+                </div>
+                <div class="video">
+                    <div class="video-frame">
+                        <iframe src="https://player.vimeo.com/video/1057407037?h=cade535648&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Provocateur Images giveaway promo" loading="lazy" tabindex="-1"></iframe>
+                        <button class="video-trigger" type="button" aria-label="Play Provocateur Images giveaway promo"></button>
+                    </div>
+                    <description>Provacatuer Images</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2023</date></span>
+                </div>
             </div>
-            <description>Benhorvatphoto</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2023</date></span>
         </div>
-
-        <div class="video">
-            <div class="video-frame">
-                <iframe src="https://player.vimeo.com/video/1057407017?h=739c07402a&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Ben Horvat testimonial" loading="lazy" tabindex="-1"></iframe>
-                <button class="video-trigger" type="button" aria-label="Play Ben Horvat testimonial"></button>
+        <footer>
+            <div class="social">
+                <a href="mailto: justingee80@gmail.com">Email</a>,
+                    <a href="images/resume-gee-2026.pdf">Resume</a>,
+                    <a href="https://www.linkedin.com/in/jiaweigee">Linkedin</a>
             </div>
-            <description>Benhorvatphoto</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2024</date></span>
-
-        </div>
-
-        <div class="video">
-            <div class="video-frame">
-                <iframe src="https://player.vimeo.com/video/1057406996?h=78fbdd52d2&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Show Your Spark Justene" loading="lazy" tabindex="-1"></iframe>
-                <button class="video-trigger" type="button" aria-label="Play Show Your Spark Justene video"></button>
-            </div>
-            <description>Showyourspark</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2024</date></span>
-        </div>
-
-        <div class="video">
-            <div class="video-frame">
-                <iframe src="https://player.vimeo.com/video/1057406967?h=447a33af4d&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Show Your Spark Kim" loading="lazy" tabindex="-1"></iframe>
-                <button class="video-trigger" type="button" aria-label="Play Show Your Spark Kim video"></button>
-            </div>
-            <description>Showyourspark</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2023</date></span>
-        </div>
-
-        <div class="video">
-            <div class="video-frame">
-                <iframe src="https://player.vimeo.com/video/1057406931?h=5315ae6edc&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Show Your Spark Alicia" loading="lazy" tabindex="-1"></iframe>
-                <button class="video-trigger" type="button" aria-label="Play Show Your Spark Alicia video"></button>
-            </div>
-            <description>Showyourspark</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2023</date></span>
-        </div>
-
-        <div class="video">
-            <div class="video-frame">
-                <iframe src="https://player.vimeo.com/video/1057407046?h=03b07296a4&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Provocateur Images sale promo" loading="lazy" tabindex="-1"></iframe>
-                <button class="video-trigger" type="button" aria-label="Play Provocateur Images sale promo"></button>
-            </div>
-            <description>Provacatuer Images</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2023</date></span>
-        </div>
-
-        <div class="video">
-            <div class="video-frame">
-                <iframe src="https://player.vimeo.com/video/1057407037?h=cade535648&amp;badge=0&amp;autopause=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Provocateur Images giveaway promo" loading="lazy" tabindex="-1"></iframe>
-                <button class="video-trigger" type="button" aria-label="Play Provocateur Images giveaway promo"></button>
-            </div>
-            <description>Provacatuer Images</description><span class="video-meta-separator">&nbsp;-&nbsp;<date>2023</date></span>
-        </div>
-
-          
-    </div>
-
-    </div>
-
-    <footer>
-        
-        <a class="social">
-        <a href="mailto: justingee80@gmail.com">Email</a>,
-        <a href="images/resume-gee-2026.pdf">Resume</a>,
-        <a href="https://www.linkedin.com/in/jiaweigee">Linkedin</a>
-        </a>   
-            
-        <a class="copyright">Design by Jiawei(Justin) Gee</a>
-        
-    </footer>
-
-
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <script>
-        document.querySelectorAll(".video-frame").forEach(function (frame) {
-            var iframe = frame.querySelector("iframe");
-            var button = frame.querySelector(".video-trigger");
-            var player = new Vimeo.Player(iframe);
-            var isPointerOver = false;
-            var isFocused = false;
-            var isUserPlaying = false;
-            var isResettingPreview = false;
-            var previewDuration = 7;
-            var isSeeking = false;
-            var controls = document.createElement("div");
-
-            controls.className = "video-controls";
-            controls.hidden = true;
-            controls.innerHTML = '<button class="video-control-button video-play-pause" type="button" aria-label="Play video"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="play-icon" d="M8 5v14l11-7z"></path><path class="pause-icon" d="M8 5v14M16 5v14"></path></svg></button><span class="video-time video-current-time">0:00</span><input class="video-progress" type="range" min="0" max="0" step="0.1" value="0" aria-label="Seek video" disabled><span class="video-time video-duration">0:00</span><button class="video-control-button video-mute" type="button" aria-label="Mute video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4z"></path><path class="mute-icon" d="M16 9a5 5 0 0 1 0 6M18.5 6.5a9 9 0 0 1 0 11"></path><path class="mute-slash" d="m16 9 5 6m0-6-5 6"></path></svg></button><button class="video-control-button video-fullscreen" type="button" aria-label="Enter fullscreen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"></path></svg></button>';
-            frame.appendChild(controls);
-
-            var playPauseButton = controls.querySelector(".video-play-pause");
-            var muteButton = controls.querySelector(".video-mute");
-            var fullscreenButton = controls.querySelector(".video-fullscreen");
-            var currentTimeLabel = controls.querySelector(".video-current-time");
-            var durationLabel = controls.querySelector(".video-duration");
-            var progress = controls.querySelector(".video-progress");
-
-            function formatTime(seconds) {
-                var totalSeconds = Math.floor(seconds || 0);
-                var minutes = Math.floor(totalSeconds / 60);
-                var remainingSeconds = totalSeconds % 60;
-                return minutes + ":" + ("0" + remainingSeconds).slice(-2);
-            }
-
-            player.on("play", function () {
-                controls.classList.add("is-playing");
-                playPauseButton.setAttribute("aria-label", "Pause video");
-            });
-
-            player.on("pause", function () {
-                controls.classList.remove("is-playing");
-                playPauseButton.setAttribute("aria-label", "Play video");
-            });
-
-            player.on("timeupdate", function (data) {
-                var duration = data.duration || 0;
-                progress.max = duration;
-                progress.disabled = duration <= 0;
-                currentTimeLabel.textContent = formatTime(data.seconds);
-                durationLabel.textContent = formatTime(duration);
-                if (!isSeeking) {
-                    progress.value = data.seconds;
-                }
-            });
-
-            player.on("volumechange", function (data) {
-                controls.classList.toggle("is-muted", data.muted);
-                muteButton.setAttribute("aria-label", data.muted ? "Unmute video" : "Mute video");
-            });
-
-            async function togglePlayback() {
-                try {
-                    if (await player.getPaused()) {
-                        await player.play();
-                    } else {
-                        await player.pause();
-                    }
-                } catch (error) {
-                    console.error("Could not toggle Vimeo playback:", error);
-                }
-            }
-
-            playPauseButton.addEventListener("click", togglePlayback);
-
-            frame.addEventListener("click", function (event) {
-                if (!isUserPlaying || button.contains(event.target) || controls.contains(event.target)) return;
-                togglePlayback();
-            });
-
-            progress.addEventListener("input", function () {
-                isSeeking = true;
-                currentTimeLabel.textContent = formatTime(progress.value);
-            });
-
-            progress.addEventListener("change", async function () {
-                try {
-                    await player.setCurrentTime(Number(progress.value));
-                } catch (error) {
-                    console.error("Could not seek Vimeo video:", error);
-                } finally {
-                    isSeeking = false;
-                }
-            });
-
-            muteButton.addEventListener("click", async function () {
-                try {
-                    await player.setMuted(!(await player.getMuted()));
-                } catch (error) {
-                    console.error("Could not toggle Vimeo mute:", error);
-                }
-            });
-
-            fullscreenButton.addEventListener("click", async function () {
-                try {
-                    await frame.requestFullscreen();
-                } catch (error) {
-                    console.error("Could not enter fullscreen:", error);
-                }
-            });
-
-            document.addEventListener("fullscreenchange", function () {
-                var isFullscreen = document.fullscreenElement === frame;
-                fullscreenButton.setAttribute(
-                    "aria-label",
-                    isFullscreen ? "Exit fullscreen" : "Enter fullscreen"
-                );
-            });
-
-            async function loopPreview() {
-                if (isResettingPreview || isUserPlaying || (!isPointerOver && !isFocused)) return;
-
-                isResettingPreview = true;
-                try {
-                    await player.setCurrentTime(0);
-                } catch (error) {
-                    console.error("Could not loop Vimeo preview:", error);
-                } finally {
-                    isResettingPreview = false;
-                }
-            }
-
-            player.on("timeupdate", function (data) {
-                if (data.seconds >= previewDuration) {
-                    loopPreview();
-                }
-            });
-
-            async function preview() {
-                if (isUserPlaying) return;
-
-                try {
-                    await player.setMuted(true);
-                    if ((isPointerOver || isFocused) && !isUserPlaying) {
-                        await player.play();
-                    }
-                } catch (error) {
-                    console.error("Could not preview Vimeo video:", error);
-                }
-            }
-
-            async function stopPreview() {
-                if (isUserPlaying || isPointerOver || isFocused) return;
-
-                try {
-                    await player.pause();
-                    if (!isPointerOver && !isFocused && !isUserPlaying) {
-                        await player.setCurrentTime(0);
-                    }
-                } catch (error) {
-                    console.error("Could not stop Vimeo preview:", error);
-                }
-            }
-
-            button.addEventListener("pointerenter", function () {
-                isPointerOver = true;
-                preview();
-            });
-
-            button.addEventListener("pointerleave", function () {
-                isPointerOver = false;
-                stopPreview();
-            });
-
-            button.addEventListener("focus", function () {
-                isFocused = true;
-                preview();
-            });
-
-            button.addEventListener("blur", function () {
-                isFocused = false;
-                stopPreview();
-            });
-
-            button.addEventListener("click", async function () {
-                try {
-                    isUserPlaying = true;
-                    button.hidden = true;
-                    controls.hidden = false;
-
-                    await Promise.all([
-                        player.setLoop(false),
-                        player.setMuted(false),
-                        player.play()
-                    ]);
-                    iframe.focus();
-                } catch (error) {
-                    isUserPlaying = false;
-                    button.hidden = false;
+            <a class="copyright">Design by Jiawei(Justin) Gee</a>
+        </footer>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <script>
+                document.querySelectorAll(".video-frame").forEach(function (frame) {
+                    var iframe = frame.querySelector("iframe");
+                    var button = frame.querySelector(".video-trigger");
+                    var player = new Vimeo.Player(iframe);
+                    var isPointerOver = false;
+                    var isFocused = false;
+                    var isUserPlaying = false;
+                    var isResettingPreview = false;
+                    var previewDuration = 7;
+                    var isSeeking = false;
+                    var controls = document.createElement("div");
+                    controls.className = "video-controls";
                     controls.hidden = true;
-                    console.error("Could not control Vimeo video:", error);
-                }
-            });
-        });
-    </script>
-</body>
+                    controls.innerHTML = '<button class="video-control-button video-play-pause" type="button" aria-label="Play video"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="play-icon" d="M8 5v14l11-7z"></path><path class="pause-icon" d="M8 5v14M16 5v14"></path></svg></button><span class="video-time video-current-time">0:00</span><input class="video-progress" type="range" min="0" max="0" step="0.1" value="0" aria-label="Seek video" disabled><span class="video-time video-duration">0:00</span><button class="video-control-button video-mute" type="button" aria-label="Mute video"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4z"></path><path class="mute-icon" d="M16 9a5 5 0 0 1 0 6M18.5 6.5a9 9 0 0 1 0 11"></path><path class="mute-slash" d="m16 9 5 6m0-6-5 6"></path></svg></button><button class="video-control-button video-fullscreen" type="button" aria-label="Enter fullscreen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"></path></svg></button>';
+                    frame.appendChild(controls);
+                    var playPauseButton = controls.querySelector(".video-play-pause");
+                    var muteButton = controls.querySelector(".video-mute");
+                    var fullscreenButton = controls.querySelector(".video-fullscreen");
+                    var currentTimeLabel = controls.querySelector(".video-current-time");
+                    var durationLabel = controls.querySelector(".video-duration");
+                    var progress = controls.querySelector(".video-progress");
+                    function formatTime(seconds) {
+                        var totalSeconds = Math.floor(seconds || 0);
+                        var minutes = Math.floor(totalSeconds / 60);
+                        var remainingSeconds = totalSeconds % 60;
+                        return minutes + ":" + ("0" + remainingSeconds).slice(-2);
+                    }
+                    player.on("play", function () {
+                        controls.classList.add("is-playing");
+                        playPauseButton.setAttribute("aria-label", "Pause video");
+                    });
+                    player.on("pause", function () {
+                        controls.classList.remove("is-playing");
+                        playPauseButton.setAttribute("aria-label", "Play video");
+                    });
+                    player.on("timeupdate", function (data) {
+                        var duration = data.duration || 0;
+                        progress.max = duration;
+                        progress.disabled = duration <= 0;
+                        currentTimeLabel.textContent = formatTime(data.seconds);
+                        durationLabel.textContent = formatTime(duration);
+                        if (!isSeeking) {
+                            progress.value = data.seconds;
+                        }
+                    });
+                    player.on("volumechange", function (data) {
+                        controls.classList.toggle("is-muted", data.muted);
+                        muteButton.setAttribute("aria-label", data.muted ? "Unmute video" : "Mute video");
+                    });
+                    async function togglePlayback() {
+                        try {
+                            if (await player.getPaused()) {
+                                await player.play();
+                            } else {
+                                await player.pause();
+                            }
+                        } catch (error) {
+                            console.error("Could not toggle Vimeo playback:", error);
+                        }
+                    }
+                    playPauseButton.addEventListener("click", togglePlayback);
+                    frame.addEventListener("click", function (event) {
+                        if (!isUserPlaying || button.contains(event.target) || controls.contains(event.target)) return;
+                        togglePlayback();
+                    });
+                    progress.addEventListener("input", function () {
+                        isSeeking = true;
+                        currentTimeLabel.textContent = formatTime(progress.value);
+                    });
+                    progress.addEventListener("change", async function () {
+                        try {
+                            await player.setCurrentTime(Number(progress.value));
+                        } catch (error) {
+                            console.error("Could not seek Vimeo video:", error);
+                        } finally {
+                            isSeeking = false;
+                        }
+                    });
+                    muteButton.addEventListener("click", async function () {
+                        try {
+                            await player.setMuted(!(await player.getMuted()));
+                        } catch (error) {
+                            console.error("Could not toggle Vimeo mute:", error);
+                        }
+                    });
+                    fullscreenButton.addEventListener("click", async function () {
+                        try {
+                            await frame.requestFullscreen();
+                        } catch (error) {
+                            console.error("Could not enter fullscreen:", error);
+                        }
+                    });
+                    document.addEventListener("fullscreenchange", function () {
+                        var isFullscreen = document.fullscreenElement === frame;
+                        fullscreenButton.setAttribute(
+                        "aria-label",
+                        isFullscreen ? "Exit fullscreen" : "Enter fullscreen"
+                        );
+                    });
+                    async function loopPreview() {
+                        if (isResettingPreview || isUserPlaying || (!isPointerOver && !isFocused)) return;
+                        isResettingPreview = true;
+                        try {
+                            await player.setCurrentTime(0);
+                        } catch (error) {
+                            console.error("Could not loop Vimeo preview:", error);
+                        } finally {
+                            isResettingPreview = false;
+                        }
+                    }
+                    player.on("timeupdate", function (data) {
+                        if (data.seconds >= previewDuration) {
+                            loopPreview();
+                        }
+                    });
+                    async function preview() {
+                        if (isUserPlaying) return;
+                        try {
+                            await player.setMuted(true);
+                            if ((isPointerOver || isFocused) && !isUserPlaying) {
+                                await player.play();
+                            }
+                        } catch (error) {
+                            console.error("Could not preview Vimeo video:", error);
+                        }
+                    }
+                    async function stopPreview() {
+                        if (isUserPlaying || isPointerOver || isFocused) return;
+                        try {
+                            await player.pause();
+                            if (!isPointerOver && !isFocused && !isUserPlaying) {
+                                await player.setCurrentTime(0);
+                            }
+                        } catch (error) {
+                            console.error("Could not stop Vimeo preview:", error);
+                        }
+                    }
+                    button.addEventListener("pointerenter", function () {
+                        isPointerOver = true;
+                        preview();
+                    });
+                    button.addEventListener("pointerleave", function () {
+                        isPointerOver = false;
+                        stopPreview();
+                    });
+                    button.addEventListener("focus", function () {
+                        isFocused = true;
+                        preview();
+                    });
+                    button.addEventListener("blur", function () {
+                        isFocused = false;
+                        stopPreview();
+                    });
+                    button.addEventListener("click", async function () {
+                        try {
+                            isUserPlaying = true;
+                            button.hidden = true;
+                            controls.hidden = false;
+                            await Promise.all([
+                            player.setLoop(false),
+                            player.setMuted(false),
+                            player.play()
+                            ]);
+                            iframe.focus();
+                        } catch (error) {
+                            isUserPlaying = false;
+                            button.hidden = false;
+                            controls.hidden = true;
+                            console.error("Could not control Vimeo video:", error);
+                        }
+                    });
+                });
+            </script>
+    </body>
 </html>
