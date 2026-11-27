@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="home-page">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -17,24 +17,41 @@
                 <a href="/">Home</a>
             </span>
         </nav>
-        <main>
+        <main class="home-hero">
             <div class="homemenu">
-                <h1>Jiawei Gee,
-                    <span class="desktop-br"></span>
-                    <span class="mobile-br"><br></span>
-                    <a href="#Gallery"><outline>Designer</outline></a>,
-                        <span class="desktop-br"></span>
-                        <span class="mobile-br"><br></span>
-                        <a href="photography.html"><outline>Photographer</outline>,</a>
-                        <span class="desktop-br"></span>
-                        <span class="mobile-br"><br></span>
-                        Cinephile.
-                    </h1>
-                </div>
-            </main>
+                <h1>Jiawei Gee, <a href="#Gallery"><outline>Designer</outline></a>, <a href="photography.html"><outline>Photographer</outline>,</a> Cinephile.</h1>
+            </div>
+        </main>
+        <a class="home-scroll-zone" href="#Gallery" aria-label="Scroll to gallery" tabindex="-1">
+            <svg class="home-scroll-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 9 6 6 6-6"></path>
+            </svg>
+        </a>
+        <script>
+            (function () {
+                var scrollZone = document.querySelector(".home-scroll-zone");
+                var homeHero = document.querySelector(".home-hero");
+
+                function updateLandingState() {
+                    var isOnLanding = homeHero.getBoundingClientRect().bottom > 0;
+                    scrollZone.classList.toggle("is-on-landing", isOnLanding);
+                    scrollZone.tabIndex = isOnLanding ? 0 : -1;
+                }
+
+                window.addEventListener("scroll", updateLandingState, { passive: true });
+                window.addEventListener("resize", updateLandingState);
+                updateLandingState();
+
+                window.addEventListener("pointermove", function (event) {
+                    if (event.pointerType !== "mouse") return;
+
+                    var isInBottomQuarter = event.clientY >= window.innerHeight * 0.75;
+                    scrollZone.classList.toggle("is-pointer-in-zone", isInBottomQuarter);
+                }, { passive: true });
+            })();
+        </script>
             <div class="container">
-                <div class="wrapper">
-                    <div id="Gallery"></div>
+                <div class="wrapper" id="Gallery">
                     <a href="webdesign.html" class="card-link">
                         <div class="box-menu home-card">
                             <div class="img-container">
