@@ -24,16 +24,15 @@
         </main>
         <a class="home-scroll-zone" href="#Gallery" aria-label="Scroll to gallery" tabindex="-1">
             <svg class="home-scroll-arrow" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m6 9 6 6 6-6"></path>
+                <path d="M3 5H21Q22 5 21.3 5.9L12.8 14.2Q12 15 11.2 14.2L2.7 5.9Q2 5 3 5Z"></path>
             </svg>
         </a>
         <script>
             (function () {
                 var scrollZone = document.querySelector(".home-scroll-zone");
-                var homeHero = document.querySelector(".home-hero");
 
                 function updateLandingState() {
-                    var isOnLanding = homeHero.getBoundingClientRect().bottom > 0;
+                    var isOnLanding = window.scrollY <= 0;
                     scrollZone.classList.toggle("is-on-landing", isOnLanding);
                     scrollZone.tabIndex = isOnLanding ? 0 : -1;
                 }
